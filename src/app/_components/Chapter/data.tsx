@@ -1,5 +1,4 @@
 import { Question } from '../Question';
-import { VerseTooltip } from '../VerseTooltip';
 
 export interface IChapterData {
   book: string;
