@@ -29,6 +29,27 @@ const getChapterIdentifiers = () => {
   return identifiers;
 };
 
+const GRADIENT_ARRAY = [
+  'bg-gradient-to-r from-violet-600 to-indigo-600',
+  'bg-gradient-to-r from-amber-500 to-pink-500',
+  'bg-gradient-to-tr from-violet-600 to-indigo-600',
+  'bg-gradient-to-r from-violet-200 to-pink-200',
+  'bg-gradient-to-r from-pink-500 to-rose-500',
+  'bg-gradient-to-r from-slate-300 to-slate-500',
+  'bg-gradient-to-r from-emerald-500 to-emerald-900',
+  'bg-gradient-to-r from-blue-800 to-indigo-900',
+  'bg-gradient-to-r from-purple-500 to-purple-900',
+  'bg-gradient-to-r from-blue-200 to-cyan-200',
+  'bg-gradient-to-r from-cyan-500 to-blue-500',
+  'bg-gradient-to-r from-fuchsia-500 to-pink-500',
+  'bg-gradient-to-r from-slate-900 to-slate-700',
+  'bg-gradient-to-r from-stone-500 to-stone-700',
+  'bg-gradient-to-r from-neutral-300 to-stone-400',
+  'bg-gradient-to-r from-purple-500 to-purple-900',
+  'bg-gradient-to-r from-fuchsia-500 to-cyan-500',
+  'bg-gradient-to-r from-lime-400 to-lime-500',
+];
+
 export default function ChapterPage({ params: { chapter } }: { params: { chapter: string } }) {
   const chapterData = ChapterData.get(chapter) || findChapterByShortName(chapter);
 
@@ -59,7 +80,7 @@ export default function ChapterPage({ params: { chapter } }: { params: { chapter
         <title>My page title</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <Chapter chapter={chapter} {...chapterData}>
+      <Chapter chapter={chapter} gradient={GRADIENT_ARRAY[Math.floor(Math.random() * GRADIENT_ARRAY.length)]} {...chapterData}>
         {chapterData.element}
       </Chapter>
     </>

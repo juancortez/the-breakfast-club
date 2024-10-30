@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { ChapterData } from './_components/Chapter/data';
+import { Chapter } from './_components/Chapter/Chapter';
 
 interface NavSectionBlockProps {
   name: string;
@@ -44,7 +45,9 @@ export default function Home() {
         <ul className="text-slate-700 text-sm leading-6">
           <NavSectionBlock name="The Book of Daniel">
             <>
-              <NavLink chapter={ChapterData.get('1')?.identifier} topic="Week 1" />
+              {Array.from(ChapterData).map(([key, value]) => (
+                <NavLink key={value.identifier} chapter={value.identifier} topic={`${value.title} - ${value.book}`} />
+              ))}
             </>
           </NavSectionBlock>
         </ul>
