@@ -1,12 +1,12 @@
 import { Chapter } from '@/app/_components/Chapter/Chapter';
-import { ChapterData, IChapterData } from '@/app/_components/Chapter/data';
+import { ChapterTopic, getChapterDataByTopic, IChapterData, topicIdentifierToReadable } from '@/app/_components/Chapter/data';
 import Head from 'next/head';
 import Link from 'next/link';
 
-function findChapterByShortName(chapter: string): IChapterData | undefined {
+function findChapterByShortName(data: Map<string, IChapterData>, chapter: string): IChapterData | undefined {
   let chapterData: IChapterData | undefined;
 
-  ChapterData.forEach((e) => {
+  data.forEach((e) => {
     if (e.identifier === chapter) {
       chapterData = e;
     }
@@ -23,16 +23,9 @@ export const metadata = {
   title: 'The Breakfast Club',
 };
 
-const getChapterIdentifiers = () => {
-  const identifiers: { chapter: string }[] = [];
-  ChapterData.forEach((e) => identifiers.push({ chapter: e.identifier }));
-  return identifiers;
-};
-
 const GRADIENT_ARRAY = [
   'bg-gradient-to-r from-violet-600 to-indigo-600',
   'bg-gradient-to-r from-amber-500 to-pink-500',
-  'bg-gradient-to-tr from-violet-600 to-indigo-600',
   'bg-gradient-to-r from-violet-200 to-pink-200',
   'bg-gradient-to-r from-pink-500 to-rose-500',
   'bg-gradient-to-r from-slate-300 to-slate-500',
@@ -50,11 +43,14 @@ const GRADIENT_ARRAY = [
   'bg-gradient-to-r from-lime-400 to-lime-500',
 ];
 
-export default function ChapterPage({ params: { chapter } }: { params: { chapter: string } }) {
-  const chapterData = ChapterData.get(chapter) || findChapterByShortName(chapter);
+export default function ChapterPage({ params: { topic, chapter } }: { params: { topic: ChapterTopic; chapter: string } }) {
+  const chapterTopic = getChapterDataByTopic(topic);
+  const readableTopic = topicIdentifierToReadable(topic);
+  const chapterData = chapterTopic.get(chapter) || findChapterByShortName(chapterTopic, chapter);
 
+  const title = chapterData ? `The Breakfast Club | ${readableTopic} | ${chapterData.book}` : 'The Breakfast Club';
   if (chapterData) {
-    metadata.title = `The Breakfast Club - ${chapterData.book}`;
+    metadata.title = title;
   }
 
   if (!chapterData) {
@@ -77,16 +73,13 @@ export default function ChapterPage({ params: { chapter } }: { params: { chapter
   return (
     <>
       <Head>
-        <title>My page title</title>
+        <title>{title}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <Chapter chapter={chapter} gradient={GRADIENT_ARRAY[Math.floor(Math.random() * GRADIENT_ARRAY.length)]} {...chapterData}>
+
+      <Chapter topic={readableTopic} chapter={chapter} gradient={GRADIENT_ARRAY[Math.floor(Math.random() * GRADIENT_ARRAY.length)]} {...chapterData}>
         {chapterData.element}
       </Chapter>
     </>
   );
 }
-
-export const generateStaticParams = () => {
-  return getChapterIdentifiers();
-};
