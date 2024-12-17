@@ -6,11 +6,7 @@ export default function FeedbackPage() {
         Going into 2025, we are seeking feedback on what you&apos;d like to see more of!
       </p>
 
-      <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLSd7B6hVoyTTxe1Z8vb7-s7dQc4ASy6ngmJ8N5VFAKGSmp4xcg/viewform?embedded=true"
-        width="640"
-        className="h-dvh"
-      >
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd7B6hVoyTTxe1Z8vb7-s7dQc4ASy6ngmJ8N5VFAKGSmp4xcg/viewform?embedded=true" className="h-dvh w-dvw">
         Loading...
       </iframe>
     </section>
