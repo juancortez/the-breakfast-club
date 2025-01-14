@@ -60,6 +60,13 @@ export default function Home() {
               ))}
             </>
           </NavSectionBlock>
+          <NavSectionBlock name="January 2025 Sermons">
+            <>
+              {Array.from(getChapterDataByTopic('january-2025-sermons')).map(([, value]) => (
+                <NavLink topic="january-2025-sermons" key={value.identifier} chapter={value.identifier} content={`${value.title} - ${value.book}`} />
+              ))}
+            </>
+          </NavSectionBlock>
         </ul>
       </div>
     </article>

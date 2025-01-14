@@ -10,7 +10,7 @@ export interface IChapterData {
   // https://tailwindcomponents.com/gradient-generator/
   gradient?: string;
 }
-export type ChapterTopic = 'the-book-of-daniel' | 'christmas-messy-or-amazing';
+export type ChapterTopic = 'the-book-of-daniel' | 'christmas-messy-or-amazing' | 'january-2025-sermons';
 
 const DanielChapterData = new Map<string, IChapterData>();
 DanielChapterData.set('1', {
@@ -158,9 +158,57 @@ ChristmasData.set('1', {
   ),
 });
 
+const Jan2025SermonsData = new Map<string, IChapterData>();
+Jan2025SermonsData.set('1', {
+  book: 'Discussion',
+  title: 'Made on Purpose, For a Purpose',
+  identifier: 'questions',
+  overview: (
+    <p>
+      Discussion questions for{' '}
+      <a className="hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="https://www.youtube.com/watch?v=3c55Gweg_m4">
+        Made on Purpose, For a Purpose | Pastor Doug Wekenman
+      </a>{' '}
+      sermon.
+    </p>
+  ),
+  element: (
+    <>
+      <div>
+        <Question
+          question="Read Ephesians 2:10. How does knowing you are God’s handiwork shape the way you view your life and purpose?"
+          renderReference={() => (
+            <>
+              <VerseTooltip verse="Ephesians 2:10" identifier="eph.2.10" />
+            </>
+          )}
+        />
+        <Question question="What does it mean for you personally to step into the good works God has prepared for you?" />
+        <Question question="How does the idea of God shaping you through challenges change the way you approach difficulties?" />
+        <Question
+          question="Read 2 Corinthians 5:17. How does understanding your identity as a new creation impact your perspective on purpose?"
+          renderReference={() => (
+            <>
+              <VerseTooltip verse="2 Corinthians 5:17" identifier="2co.5.17" />
+            </>
+          )}
+        />
+      </div>
+      <div>
+        <Question question="What areas of your life need the most alignment with your identity as a new creation?" />
+        <Question question="What steps can you take this week to live more intentionally as a reflection of Christ?" />
+        <Question question="How can spiritual disciplines such as prayer, fasting, and worship help you align with your identity as a new creation?" />
+      </div>
+    </>
+  ),
+});
+
 export const getChapterDataByTopic = (topic: ChapterTopic): Map<string, IChapterData> => {
   if (topic === 'the-book-of-daniel') {
     return DanielChapterData;
+  }
+  if (topic === 'january-2025-sermons') {
+    return Jan2025SermonsData;
   }
   return ChristmasData;
 };
@@ -171,5 +219,7 @@ export const topicIdentifierToReadable = (topic: ChapterTopic) => {
       return 'Christmas: Messy or Amazing?';
     case 'the-book-of-daniel':
       return 'The Book of Daniel';
+    case 'january-2025-sermons':
+      return 'January 2025 Sermons';
   }
 };
