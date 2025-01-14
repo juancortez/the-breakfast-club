@@ -46,6 +46,13 @@ export default function Home() {
     <article>
       <div className="p-12 pt-6 dark:bg-gray-900">
         <ul className="text-slate-700 text-sm leading-6">
+          <NavSectionBlock name="January 2025 Sermons">
+            <>
+              {Array.from(getChapterDataByTopic('january-2025-sermons')).map(([, value]) => (
+                <NavLink topic="january-2025-sermons" key={value.identifier} chapter={value.identifier} content={`${value.title} - ${value.book}`} />
+              ))}
+            </>
+          </NavSectionBlock>
           <NavSectionBlock name="Christmas: Messy or Amazing?">
             <>
               {Array.from(getChapterDataByTopic('christmas-messy-or-amazing')).map(([, value]) => (
@@ -57,13 +64,6 @@ export default function Home() {
             <>
               {Array.from(getChapterDataByTopic('the-book-of-daniel')).map(([, value]) => (
                 <NavLink topic="the-book-of-daniel" key={value.identifier} chapter={value.identifier} content={`${value.title} - ${value.book}`} />
-              ))}
-            </>
-          </NavSectionBlock>
-          <NavSectionBlock name="January 2025 Sermons">
-            <>
-              {Array.from(getChapterDataByTopic('january-2025-sermons')).map(([, value]) => (
-                <NavLink topic="january-2025-sermons" key={value.identifier} chapter={value.identifier} content={`${value.title} - ${value.book}`} />
               ))}
             </>
           </NavSectionBlock>
