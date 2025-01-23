@@ -174,7 +174,7 @@ const Jan2025SermonsData = new Map<string, IChapterData>();
 Jan2025SermonsData.set('1', {
   book: 'Discussion',
   title: 'Made on Purpose, For a Purpose',
-  identifier: 'questions',
+  identifier: 'made-on-purpose',
   overview: (
     <p>
       Discussion questions for{' '}
@@ -216,7 +216,7 @@ Jan2025SermonsData.set('1', {
 }).set('2', {
   book: 'Discussion',
   title: 'Get Ready to Change the World',
-  identifier: 'questions',
+  identifier: 'ready-to-change-world',
   overview: (
     <p>
       Discussion questions for <AppLink href="https://www.youtube.com/watch?v=MSMQRyOyLQw&t=1s" content="Get Ready to Change the World | Ethan Matott" />{' '}
