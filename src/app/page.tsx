@@ -49,7 +49,7 @@ export default function Home() {
           <NavSectionBlock name="Act Like Men">
             <>
               {Array.from(getChapterDataByTopic('act-like-men')).map(([, value]) => (
-                <NavLink topic="act-like-men" key={value.identifier} chapter={value.identifier} content={`${value.title}`} />
+                <NavLink topic="act-like-men" key={value.identifier} chapter={value.identifier} content={`${value.book}`} />
               ))}
             </>
           </NavSectionBlock>
