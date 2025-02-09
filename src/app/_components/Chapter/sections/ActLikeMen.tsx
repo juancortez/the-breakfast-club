@@ -20,24 +20,41 @@ ActLikeMen.set('1', {
       </div>
     </>
   ),
-}).set('2', {
-  book: 'Week 2 - A Quality Man',
-  title: 'A Quality Man',
-  identifier: 'a-quality-man',
-  element: (
-    <>
-      <div>
-        <Question question="What does it mean to be a “quality man” or person of integrity, and how can trusting God help us overcome fear and anger to live out this calling?" />
-        <Question question="How can we prioritize our faith and family in a way that aligns with biblical principles and leads to lasting growth and impact?" />
-        <Question question="Which is the tougher issue for me, fear or anger? Why?" />
-      </div>
-      <div>
-        <Question question="When was the last time I used fear or anger to deflect a deeper hurt?" />
-        <Question question="Who is most negatively impacted by my unresolved hurt and what should I do about it?" />
-        <Question question="Who do I need to forgive and for what? Why have I not acted on this sooner?" />
-      </div>
-    </>
-  ),
-});
-
-// Fear and anger are described as obstacles to being a quality man. What role do these emotions play in your life, and how can trusting God (e.g., 2 Timothy 1:7) help you overcome them?
+})
+  .set('2', {
+    book: 'Week 2 - A Quality Man',
+    title: 'A Quality Man',
+    identifier: 'a-quality-man',
+    element: (
+      <>
+        <div>
+          <Question question="What does it mean to be a “quality man” or person of integrity, and how can trusting God help us overcome fear and anger to live out this calling?" />
+          <Question question="How can we prioritize our faith and family in a way that aligns with biblical principles and leads to lasting growth and impact?" />
+          <Question question="Which is the tougher issue for me, fear or anger? Why?" />
+        </div>
+        <div>
+          <Question question="When was the last time I used fear or anger to deflect a deeper hurt?" />
+          <Question question="Who is most negatively impacted by my unresolved hurt and what should I do about it?" />
+          <Question question="Who do I need to forgive and for what? Why have I not acted on this sooner?" />
+        </div>
+      </>
+    ),
+  })
+  .set('3', {
+    book: 'Week 3 - Not a Quality Man',
+    title: 'Not a Quality Man',
+    identifier: 'not-a-quality-man',
+    element: (
+      <>
+        <div>
+          <Question question="Who is the most honorable man you know? Why do you hold that opinion of him?" />
+          <Question question="Describe a time in your life you deeply regret when you honored yourself or someone you were called to lead above honoring God." />
+          <Question question="How does honoring our family above the Lord actually put them at risk?" />
+        </div>
+        <div>
+          <Question question="Describe a time in your life you honored God above yourself. How did you feel about that decision subsequently? How do you view that decision now?" />
+          <Question question="What quality masculine choice can you make today to better reflect what it means to “act like a man”?" />
+        </div>
+      </>
+    ),
+  });
