@@ -74,6 +74,13 @@ export default function Home() {
               ))}
             </>
           </NavSectionBlock>
+          <NavSectionBlock name="Man in the Mirror">
+            <>
+              {Array.from(getChapterDataByTopic('man-in-the-mirror')).map(([, value]) => (
+                <NavLink topic="man-in-the-mirror" key={value.identifier} chapter={value.identifier} content={`${value.title}`} />
+              ))}
+            </>
+          </NavSectionBlock>
         </ul>
       </div>
     </article>

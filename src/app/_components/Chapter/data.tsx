@@ -2,6 +2,7 @@ import { Jan2025SermonsData } from './sections/January2025';
 import { DanielChapterData } from './sections/Daniel';
 import { ChristmasData } from './sections/Christmas2024';
 import { ActLikeMen } from './sections/ActLikeMen';
+import { ManInTheMirrorData } from './sections/ManInTheMirror';
 
 export interface IChapterData {
   book: string;
@@ -12,7 +13,7 @@ export interface IChapterData {
   // https://tailwindcomponents.com/gradient-generator/
   gradient?: string;
 }
-export type ChapterTopic = 'the-book-of-daniel' | 'christmas-messy-or-amazing' | 'january-2025-sermons' | 'act-like-men';
+export type ChapterTopic = 'the-book-of-daniel' | 'christmas-messy-or-amazing' | 'january-2025-sermons' | 'act-like-men' | 'man-in-the-mirror';
 
 export const getChapterDataByTopic = (topic: ChapterTopic): Map<string, IChapterData> => {
   switch (topic) {
@@ -24,6 +25,8 @@ export const getChapterDataByTopic = (topic: ChapterTopic): Map<string, IChapter
       return DanielChapterData;
     case 'act-like-men':
       return ActLikeMen;
+    case 'man-in-the-mirror':
+      return ManInTheMirrorData;
     default:
       throw new Error('Unsupported');
   }
@@ -39,5 +42,7 @@ export const topicIdentifierToReadable = (topic: ChapterTopic) => {
       return 'January 2025 Sermons';
     case 'act-like-men':
       return 'Act Like Men';
+    case 'man-in-the-mirror':
+      return 'Man in the Mirror';
   }
 };
