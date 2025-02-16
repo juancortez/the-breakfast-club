@@ -3,7 +3,7 @@ import { IChapterData } from '../data';
 
 export const ActLikeMen = new Map<string, IChapterData>();
 ActLikeMen.set('1', {
-  book: 'Week 1 - Acting Like Men',
+  book: 'Acting Like Men',
   title: 'Acting Like Men',
   identifier: 'acting-like-men',
   element: (
@@ -22,7 +22,7 @@ ActLikeMen.set('1', {
   ),
 })
   .set('2', {
-    book: 'Week 2 - A Quality Man',
+    book: 'Quality Man',
     title: 'A Quality Man',
     identifier: 'a-quality-man',
     element: (
@@ -41,7 +41,7 @@ ActLikeMen.set('1', {
     ),
   })
   .set('3', {
-    book: 'Week 3 - Not a Quality Man',
+    book: 'Not a Quality Man',
     title: 'Not a Quality Man',
     identifier: 'not-a-quality-man',
     element: (
@@ -54,6 +54,24 @@ ActLikeMen.set('1', {
         <div>
           <Question question="Describe a time in your life you honored God above yourself. How did you feel about that decision subsequently? How do you view that decision now?" />
           <Question question="What quality masculine choice can you make today to better reflect what it means to “act like a man”?" />
+        </div>
+      </>
+    ),
+  })
+  .set('4', {
+    book: 'And the gold goes to...',
+    title: 'And the gold goes to...',
+    identifier: 'and-the-gold-goes-to',
+    element: (
+      <>
+        <div>
+          <Question question="What area of pride have you most shielded from total honesty?" />
+          <Question question="Why do you think we find it so hard to be honest with ourselves?" />
+          <Question question="When have you been most honest about your own sin? What brought you to that point?" />
+        </div>
+        <div>
+          <Question question="What is the biggest lie you have told yourself about yourself and for how long?" />
+          <Question question="Who is the most honest and humble man you have known? How might you begin to emulate him?" />
         </div>
       </>
     ),
