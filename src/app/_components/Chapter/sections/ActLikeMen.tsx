@@ -75,4 +75,22 @@ ActLikeMen.set('1', {
         </div>
       </>
     ),
+  })
+  .set('5', {
+    book: 'What are you looking at?',
+    title: 'What are you looking at?',
+    identifier: 'what-are-you-looking-at',
+    element: (
+      <>
+        <div>
+          <Question question="What behavior characterizes the worst men you know?" />
+          <Question question="In what ways have you battled, at least on an attitude level, the very same things?" />
+          <Question question="Why is it essential that we hold ourselves to a higher standard than what we see around us?" />
+        </div>
+        <div>
+          <Question question="What good results from the practice of being harder on ourselves than others?" />
+          <Question question="Why do Christians seem to struggle more than nonbelievers with judging others?" />
+        </div>
+      </>
+    ),
   });
