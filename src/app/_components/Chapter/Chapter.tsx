@@ -1,3 +1,4 @@
+import { HomeButton } from '../HomeNavButton';
 import { IChapterData } from './data';
 
 interface ChapterProps extends IChapterData {
@@ -19,7 +20,11 @@ export function Chapter({ book, topic, overview, gradient = 'bg-gradient-to-r to
 
       {overview && <blockquote className="mt-4 text-gray-900 dark:text-white">{overview}</blockquote>}
 
-      <div className="grid pt-8 text-left md:gap-16  md:grid-cols-2">{children}</div>
+      <div className="grid pt-8 text-left md:gap-16 md:grid-cols-2">{children}</div>
+
+      <section className="flex justify-center items-center mt-4 sticky top-[90vh]">
+        <HomeButton />
+      </section>
     </article>
   );
 }

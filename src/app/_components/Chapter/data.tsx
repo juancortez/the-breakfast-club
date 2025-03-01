@@ -3,6 +3,7 @@ import { DanielChapterData } from './sections/Daniel';
 import { ChristmasData } from './sections/Christmas2024';
 import { ActLikeMen } from './sections/ActLikeMen';
 import { ManInTheMirrorData } from './sections/ManInTheMirror';
+import { JamesChapterData } from './sections/James';
 
 export interface IChapterData {
   book: string;
@@ -13,7 +14,7 @@ export interface IChapterData {
   // https://tailwindcomponents.com/gradient-generator/
   gradient?: string;
 }
-export type ChapterTopic = 'the-book-of-daniel' | 'christmas-messy-or-amazing' | 'january-2025-sermons' | 'act-like-men' | 'man-in-the-mirror';
+export type ChapterTopic = 'the-book-of-daniel' | 'christmas-messy-or-amazing' | 'january-2025-sermons' | 'act-like-men' | 'man-in-the-mirror' | 'james';
 
 export const getChapterDataByTopic = (topic: ChapterTopic): Map<string, IChapterData> => {
   switch (topic) {
@@ -27,6 +28,8 @@ export const getChapterDataByTopic = (topic: ChapterTopic): Map<string, IChapter
       return ActLikeMen;
     case 'man-in-the-mirror':
       return ManInTheMirrorData;
+    case 'james':
+      return JamesChapterData;
     default:
       throw new Error('Unsupported');
   }
@@ -44,5 +47,7 @@ export const topicIdentifierToReadable = (topic: ChapterTopic) => {
       return 'Act Like Men';
     case 'man-in-the-mirror':
       return 'Man in the Mirror';
+    case 'james':
+      return 'The Book of James';
   }
 };

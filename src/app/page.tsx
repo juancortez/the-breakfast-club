@@ -46,6 +46,14 @@ export default function Home() {
     <article>
       <div className="p-12 pt-6 dark:bg-gray-900">
         <ul className="text-slate-700 text-sm leading-6">
+          <NavSectionBlock name="The Book of James">
+            <>
+              {Array.from(getChapterDataByTopic('james')).map(([, value]) => (
+                <NavLink topic="james" key={value.identifier} chapter={value.identifier} content={`${value.book}`} />
+              ))}
+            </>
+          </NavSectionBlock>
+
           <NavSectionBlock name="Act Like Men">
             <>
               {Array.from(getChapterDataByTopic('act-like-men')).map(([, value]) => (
