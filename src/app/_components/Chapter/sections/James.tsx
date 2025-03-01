@@ -11,7 +11,7 @@ JamesChapterData.set('1', {
     <div>
       <h2 className="flex mb-4 text-lg font-medium text-gray-900 dark:text-white">Exegetical Context of James 1</h2>
 
-      <ul className="list-disc">
+      <ul className="list-disc pl-8">
         <li>
           <b>Authorship and Audience:</b> James, the brother of Jesus, writes to Jewish Christians scattered abroad, encouraging them amid trials.
         </li>
