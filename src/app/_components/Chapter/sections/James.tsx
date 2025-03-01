@@ -9,17 +9,25 @@ JamesChapterData.set('1', {
   identifier: 'week-one',
   overview: (
     <div>
-      <h2 className="flex mb-4 text-lg font-medium text-gray-900 dark:text-white">The Big Picture</h2>
+      <h2 className="flex mb-4 text-lg font-medium text-gray-900 dark:text-white">Exegetical Context of James 1</h2>
 
-      <p>
-        James 1:1-11 is divided into 3 distinct sections; Joy in Trials (1:1-4), Wisdom from God in Trials (1:5-8), and Don’t Trust in Yourself, No Matter Your
-        Station in life (1:9-11).
-      </p>
-      <br />
-      <p>
-        James tells his readers not to despair because of their trials, but rather to bear up under them, relying on God, recognizing that he is using their
-        trials for their good.
-      </p>
+      <ul className="list-disc">
+        <li>
+          <b>Authorship and Audience:</b> James, the brother of Jesus, writes to Jewish Christians scattered abroad, encouraging them amid trials.
+        </li>
+        <li>
+          <b>Historical and Cultural Context:</b> Early Christians faced persecution, poverty, and social marginalization, shaping the letter’s focus on
+          endurance and faith in action.
+        </li>
+        <li>
+          <b>Literary Context:</b> James 1 introduces key themes like joy in trials, seeking wisdom from God, humility, and the importance of living out one’s
+          faith.
+        </li>
+        <li>
+          <b>Theological Emphasis:</b> The chapter highlights God’s purpose in trials, the need for divine wisdom, and the call to genuine faith expressed
+          through obedience and humility.
+        </li>
+      </ul>
 
       <hr className="border-t border-gray-200 dark:border-gray-700 mt-4"></hr>
     </div>
