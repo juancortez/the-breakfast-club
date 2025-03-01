@@ -4,7 +4,7 @@ import { IChapterData } from '../data';
 
 export const JamesChapterData = new Map<string, IChapterData>();
 JamesChapterData.set('1', {
-  book: 'Faith in Exile',
+  book: 'Joy, Wisdom, & Trust',
   title: 'Week 1',
   identifier: 'week-one',
   overview: (
