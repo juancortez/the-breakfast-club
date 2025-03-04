@@ -7,9 +7,27 @@ const BINGO_IDENTIFIERS = [
     'Journal for a week',
     'Work out with someone in the group',
   ],
-  ['Increase max number of pushups by 5', '', 'FREE', '', ''],
-  ['', '', '', '', ''],
-  ['', '', '', '', ''],
+  [
+    'Increase max number of pushups by 5',
+    'Invite someone new to church',
+    'FREE',
+    'Ask a pastor: “recommend me a book that you haven’t recommended to anyone in the last month”',
+    'Go on 2 date nights',
+  ],
+  [
+    'Start a new positive habit',
+    'Setup a budget and get an accountability partner to look it over',
+    'Go in person to church every weekend for a month. ',
+    'Start each morning with prayer for a week. ',
+    'Pray with the Prayer team after church service',
+  ],
+  [
+    'Write down 10 things you like about yourself',
+    'Move your cell phone permanently out of your bedroom at night for a week',
+    'Find a mentor and an accountability buddy. ',
+    'Reconnect with someone you love.',
+    'Invite a member of group to your house and cook them a meal.',
+  ],
 ];
 
 export default function BingoPage() {
