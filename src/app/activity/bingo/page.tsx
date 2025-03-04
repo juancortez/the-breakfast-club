@@ -1,7 +1,13 @@
 import { Metadata } from 'next';
 
 const BINGO_IDENTIFIERS = [
-  ['Invite someone to the group', 'Attend group social', 'Attend Friday (4) times', 'Volunteer at church', 'Set phone to "Do Not Disturb" during workday'],
+  [
+    'Invite someone to the group',
+    'Attend group social',
+    'Attend Friday Group (4) times',
+    'Volunteer at church',
+    'Set phone to "Do Not Disturb" during workday',
+  ],
   [
     'Unplug bedroom TV for a whole week',
     'Have coffee with someone in group',
