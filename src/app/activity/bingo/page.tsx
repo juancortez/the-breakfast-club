@@ -1,3 +1,5 @@
+import { Metadata } from 'next';
+
 const BINGO_IDENTIFIERS = [
   ['Invite someone to the group', 'Attend group social', 'Attend Friday (4) times', 'Volunteer at church', 'Set phone to "Do Not Disturb" during workday'],
   [
@@ -29,6 +31,10 @@ const BINGO_IDENTIFIERS = [
     'Invite a member of group to your house and cook them a meal.',
   ],
 ];
+
+export const metadata: Metadata = {
+  title: 'The Breakfast Club | Bingo',
+};
 
 export default function BingoPage() {
   return (
