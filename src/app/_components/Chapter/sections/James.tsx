@@ -144,7 +144,7 @@ JamesChapterData.set('1', {
     ),
   })
   .set('3', {
-    book: 'Listen, Obey, Reflect (James 1:12-18)',
+    book: 'Listen, Obey, Reflect (James 1:19-27)',
     title: 'Week 3',
     identifier: 'week-three',
     overview: (
