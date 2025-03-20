@@ -12,10 +12,26 @@ interface VerseModalProps extends VerseTooltipProps {
   onClose: () => void;
 }
 
+class ApiClient {
+  static async getVerse(identifier: string): Promise<string> {
+    const cache = localStorage.getItem(identifier);
+    if (cache) {
+      return Promise.resolve(cache);
+    }
+    const response = await fetch(`/api/bible?translationId=${identifier}`);
+    if (!response.ok) {
+      throw new Error();
+    }
+    const { content } = await response.json();
+    localStorage.setItem(identifier, content);
+    return content;
+  }
+}
+
 const VerseModal = ({ verse, identifier, onClose }: VerseModalProps) => {
   const [error, setError] = useState<string>();
   const [isLoading, setIsLoading] = useState(false);
-  const [content, setContent] = useState();
+  const [content, setContent] = useState<string>();
 
   useEffect(() => {
     const handleEsc = (event: KeyboardEvent) => {
@@ -33,11 +49,7 @@ const VerseModal = ({ verse, identifier, onClose }: VerseModalProps) => {
   const request = useCallback(async () => {
     try {
       setIsLoading(true);
-      const response = await fetch(`/api/bible?translationId=${identifier}`);
-      if (!response.ok) {
-        throw new Error();
-      }
-      const { content } = await response.json();
+      const content = await ApiClient.getVerse(identifier);
       setContent(content);
       setIsLoading(false);
     } catch (e) {
