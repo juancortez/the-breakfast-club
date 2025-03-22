@@ -51,6 +51,10 @@ export const TranslationSelector = () => {
     };
   }, [escFunction]);
 
+  if (!translation) {
+    return null;
+  }
+
   return (
     <div ref={wrapperRef}>
       <div className="relative inline-block text-left dropdown">
@@ -63,7 +67,7 @@ export const TranslationSelector = () => {
             aria-controls="headlessui-menu-items-117"
             onClick={() => setShow((s) => !s)}
           >
-            <span>{translation.title}</span>
+            <span>{translation?.title || 'Translation'}</span>
             <svg className="w-5 h-5 ml-2 -mr-1" viewBox="0 0 20 20" fill="currentColor">
               <path
                 fill-rule="evenodd"

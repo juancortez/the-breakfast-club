@@ -52,10 +52,12 @@ const VerseModal = ({ verse, identifier, onClose }: VerseModalProps) => {
   }, [onClose]);
 
   const request = useCallback(async () => {
+    const selectedTranslation = translation?.identifier || 'esv';
+
     try {
       setIsLoading(true);
       const content = await ApiClient.getVerse(identifier, {
-        translation: translation.identifier,
+        translation: selectedTranslation,
       });
       setContent(content);
       setIsLoading(false);
@@ -63,7 +65,7 @@ const VerseModal = ({ verse, identifier, onClose }: VerseModalProps) => {
       setIsLoading(false);
       setError((e as Error)?.message || `Unable to find ${verse}.`);
     }
-  }, [setIsLoading, setContent, setError, identifier, verse, translation.identifier]);
+  }, [setIsLoading, setContent, setError, identifier, verse, translation?.identifier]);
 
   useEffect(() => {
     request();
