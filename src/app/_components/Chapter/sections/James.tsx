@@ -202,6 +202,32 @@ JamesChapterData.set('1', {
     book: 'Partiality, Love, Mercy (James 2:1-13)',
     title: 'Week 4',
     identifier: 'week-four',
+    overview: (
+      <div>
+        <h2 className="flex mb-4 text-lg font-medium text-gray-900 dark:text-white">Exegetical Context of James 2:1–13</h2>
+
+        <ul className="list-disc pl-8">
+          <li>
+            <b>Literary Context:</b> James 2:1-13 expands on pure religion by condemning favoritism toward the wealthy while connecting to the broader theme
+            that genuine faith must be demonstrated through actions.
+          </li>
+          <li>
+            <b>Historical and Cultural Context:</b> In the class-conscious Greco-Roman world where early Christians gathered, James challenged cultural norms of
+            preferential treatment for the wealthy, especially relevant to communities facing economic hardship.
+          </li>
+          <li>
+            <b>Theological Context:</b> James grounds his teaching in God&apos;s impartiality and the &quot;royal law&quot; of loving one&apos;s neighbor,
+            emphasizing that mercy triumphs over judgment.
+          </li>
+          <li>
+            <b>Summary:</b> James 2:1-13 illustrates how authentic faith manifests in just and merciful behavior that rejects societal favoritism while
+            establishing the foundation for the faith-works discourse that follows.
+          </li>
+        </ul>
+
+        <hr className="border-t border-gray-200 dark:border-gray-700 mt-4"></hr>
+      </div>
+    ),
     element: (
       <>
         <div>
