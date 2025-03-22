@@ -1,18 +1,32 @@
-import { type NextRequest } from "next/server";
-import { NextResponse } from "next/server";
+import { type NextRequest } from 'next/server';
+import { NextResponse } from 'next/server';
 
-const BibleScraper = require("bible-scraper");
+const BibleScraper = require('bible-scraper');
 
 const ESV_SCRAPER = new BibleScraper(BibleScraper.TRANSLATIONS.ESV);
+const NIV_SCRAPER = new BibleScraper(BibleScraper.TRANSLATIONS.NIV);
+
+type AvailableTranslations = 'esv' | 'niv';
+const getScraper = (translation: AvailableTranslations) => {
+  switch (translation) {
+    case 'esv':
+      return ESV_SCRAPER;
+    case 'niv':
+      return NIV_SCRAPER;
+    default:
+      return 'esv';
+  }
+};
 
 export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams;
-  const query = searchParams.get("translationId");
+  const translation: AvailableTranslations = (searchParams.get('translation') || 'esv') as AvailableTranslations;
+  const query = searchParams.get('translationId');
 
   if (!query) {
     return NextResponse.json(
       {
-        message: "Must provide query to request verse.",
+        message: 'Must provide query to request verse.',
       },
       {
         status: 400,
@@ -20,14 +34,17 @@ export async function GET(request: NextRequest) {
     );
   }
 
-  const cachedQuery = global.cacheUser.get(query);
+  const cacheKey = `${query}__${translation}`;
+  const cachedQuery = global.cacheUser.get(cacheKey);
   if (cachedQuery) {
     return NextResponse.json({ content: cachedQuery });
   }
 
+  const scraper = getScraper(translation);
+
   try {
-    const { content } = await ESV_SCRAPER.verse(query);
-    global.cacheUser.set(query, content);
+    const { content } = await scraper.verse(query);
+    global.cacheUser.set(cacheKey, content);
     return NextResponse.json({ content });
   } catch (e) {
     return NextResponse.json(

@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useState } from 'react';
 import { Spinner } from './Spinner';
+import { useClientContext } from '../_context/ClientContext';
 
 interface VerseTooltipProps {
   verse: string;
@@ -13,22 +14,26 @@ interface VerseModalProps extends VerseTooltipProps {
 }
 
 class ApiClient {
-  static async getVerse(identifier: string): Promise<string> {
-    const cache = localStorage.getItem(identifier);
-    if (cache) {
-      return Promise.resolve(cache);
-    }
-    const response = await fetch(`/api/bible?translationId=${identifier}`);
+  static async getVerse(identifier: string, options?: { translation: 'esv' | 'niv' }): Promise<string> {
+    const translation = options?.translation || 'esv';
+    const cacheKey = translation + '__' + identifier;
+    const cache = localStorage.getItem(cacheKey);
+    // if (cache) {
+    //   return Promise.resolve(cache);
+    // }
+    const response = await fetch(`/api/bible?translationId=${identifier}&translation=${translation}`);
     if (!response.ok) {
       throw new Error();
     }
     const { content } = await response.json();
-    localStorage.setItem(identifier, content);
+    localStorage.setItem(cacheKey, content);
     return content;
   }
 }
 
 const VerseModal = ({ verse, identifier, onClose }: VerseModalProps) => {
+  const { translation } = useClientContext();
+
   const [error, setError] = useState<string>();
   const [isLoading, setIsLoading] = useState(false);
   const [content, setContent] = useState<string>();
@@ -49,14 +54,16 @@ const VerseModal = ({ verse, identifier, onClose }: VerseModalProps) => {
   const request = useCallback(async () => {
     try {
       setIsLoading(true);
-      const content = await ApiClient.getVerse(identifier);
+      const content = await ApiClient.getVerse(identifier, {
+        translation: translation.identifier,
+      });
       setContent(content);
       setIsLoading(false);
     } catch (e) {
       setIsLoading(false);
       setError((e as Error)?.message || `Unable to find ${verse}.`);
     }
-  }, [setIsLoading, setContent, setError, identifier, verse]);
+  }, [setIsLoading, setContent, setError, identifier, verse, translation.identifier]);
 
   useEffect(() => {
     request();
