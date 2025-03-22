@@ -1,6 +1,6 @@
 'use client';
 
-import { Ref, RefObject, useCallback, useEffect, useRef, useState } from 'react';
+import React, { RefObject, useCallback, useEffect, useRef, useState } from 'react';
 import { useClientContext } from '../_context/ClientContext';
 
 /**
@@ -24,6 +24,21 @@ function useOutsideAlerter(ref: RefObject<HTMLElement>, cb: () => void) {
     };
   }, [ref, cb]);
 }
+
+export type Variant = 'ESV' | 'NIV' | 'KJV';
+const ALL_VARIANTS: Variant[] = ['ESV', 'NIV', 'KJV'];
+const Translation = ({ onSetTranslation, variant }: { onSetTranslation: (translation: Variant) => void; variant: Variant }) => {
+  return (
+    <button
+      onClick={() => onSetTranslation(variant)}
+      tabIndex={0}
+      className="text-gray-700 flex justify-between w-full px-4 py-2 text-sm leading-5 text-left"
+      role="menuitem"
+    >
+      {variant}
+    </button>
+  );
+};
 
 export const TranslationSelector = () => {
   const { translation, setTranslationHelper } = useClientContext();
@@ -50,6 +65,36 @@ export const TranslationSelector = () => {
       document.removeEventListener('keydown', escFunction, false);
     };
   }, [escFunction]);
+
+  const onSetTranslation = useCallback(
+    (variant: Variant) => {
+      setShow(false);
+
+      switch (variant) {
+        case 'ESV':
+          return setTranslationHelper({
+            identifier: 'esv',
+            title: 'ESV',
+          });
+        case 'NIV':
+          return setTranslationHelper({
+            identifier: 'niv',
+            title: 'NIV',
+          });
+        case 'KJV':
+          return setTranslationHelper({
+            identifier: 'kjv',
+            title: 'KJV',
+          });
+        default:
+          setTranslationHelper({
+            identifier: 'esv',
+            title: 'ESV',
+          });
+      }
+    },
+    [setShow, setTranslationHelper]
+  );
 
   if (!translation) {
     return null;
@@ -85,34 +130,11 @@ export const TranslationSelector = () => {
             role="menu"
           >
             <div className="py-1">
-              <button
-                onClick={() => {
-                  setShow(false);
-                  setTranslationHelper({
-                    identifier: 'esv',
-                    title: 'ESV',
-                  });
-                }}
-                tabIndex={0}
-                className="text-gray-700 flex justify-between w-full px-4 py-2 text-sm leading-5 text-left"
-                role="menuitem"
-              >
-                ESV
-              </button>
-              <button
-                onClick={() => {
-                  setShow(false);
-                  setTranslationHelper({
-                    identifier: 'niv',
-                    title: 'NIV',
-                  });
-                }}
-                tabIndex={1}
-                className="text-gray-700 flex justify-between w-full px-4 py-2 text-sm leading-5 text-left"
-                role="menuitem"
-              >
-                NIV
-              </button>
+              {ALL_VARIANTS.map((option) => (
+                <React.Fragment key={option}>
+                  <Translation variant={option} onSetTranslation={onSetTranslation} />
+                </React.Fragment>
+              ))}
             </div>
           </div>
         </div>

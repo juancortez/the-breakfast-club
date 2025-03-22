@@ -12,6 +12,10 @@ type Context = {
         identifier: 'niv';
         title: 'NIV';
       }
+    | {
+        identifier: 'kjv';
+        title: 'KJV';
+      }
     | null;
 
   setTranslationHelper: (_translation: Context['translation']) => void;

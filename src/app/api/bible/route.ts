@@ -5,14 +5,17 @@ const BibleScraper = require('bible-scraper');
 
 const ESV_SCRAPER = new BibleScraper(BibleScraper.TRANSLATIONS.ESV);
 const NIV_SCRAPER = new BibleScraper(BibleScraper.TRANSLATIONS.NIV);
+const KJV_SCRAPER = new BibleScraper(BibleScraper.TRANSLATIONS.KJV);
 
-type AvailableTranslations = 'esv' | 'niv';
+type AvailableTranslations = 'esv' | 'niv' | 'kjv';
 const getScraper = (translation: AvailableTranslations) => {
   switch (translation) {
     case 'esv':
       return ESV_SCRAPER;
     case 'niv':
       return NIV_SCRAPER;
+    case 'kjv':
+      return KJV_SCRAPER;
     default:
       return 'esv';
   }

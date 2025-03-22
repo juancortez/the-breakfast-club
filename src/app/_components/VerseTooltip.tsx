@@ -14,13 +14,13 @@ interface VerseModalProps extends VerseTooltipProps {
 }
 
 class ApiClient {
-  static async getVerse(identifier: string, options?: { translation: 'esv' | 'niv' }): Promise<string> {
+  static async getVerse(identifier: string, options?: { translation: 'esv' | 'niv' | 'kjv' }): Promise<string> {
     const translation = options?.translation || 'esv';
     const cacheKey = translation + '__' + identifier;
     const cache = localStorage.getItem(cacheKey);
-    // if (cache) {
-    //   return Promise.resolve(cache);
-    // }
+    if (cache) {
+      return Promise.resolve(cache);
+    }
     const response = await fetch(`/api/bible?translationId=${identifier}&translation=${translation}`);
     if (!response.ok) {
       throw new Error();
