@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import './globals.css';
 import Link from 'next/link';
 import { ClientProvider } from './_context/ClientContext';
@@ -23,7 +23,6 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
-
       <body className={`${inter.className} bg-white dark:bg-gray-900 h-[100dvh]`}>
         <main>
           <ClientProvider>
@@ -41,8 +40,8 @@ export default function RootLayout({
             </section>
           </ClientProvider>
         </main>
-        <Analytics />
       </body>
+      <SpeedInsights />
     </html>
   );
 }
