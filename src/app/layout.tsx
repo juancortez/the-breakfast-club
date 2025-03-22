@@ -29,7 +29,7 @@ export default function RootLayout({
           <ClientProvider>
             <section>
               <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-                <div className="flex justify-between flex-col sm:flex-row mb-2">
+                <div className="flex justify-between flex-col sm:flex-row">
                   <h1 className="mb-4 text-5xl tracking-tight font-extrabold text-gray-900 dark:text-white">
                     <Link href="/">The Breakfast Club</Link>
                   </h1>
