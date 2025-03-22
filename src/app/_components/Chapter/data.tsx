@@ -1,6 +1,5 @@
-import { Jan2025SermonsData } from './sections/January2025';
+import { RedRocksSermons } from './sections/RedRocksSermons';
 import { DanielChapterData } from './sections/Daniel';
-import { ChristmasData } from './sections/Christmas2024';
 import { ActLikeMen } from './sections/ActLikeMen';
 import { ManInTheMirrorData } from './sections/ManInTheMirror';
 import { JamesChapterData } from './sections/James';
@@ -14,14 +13,12 @@ export interface IChapterData {
   // https://tailwindcomponents.com/gradient-generator/
   gradient?: string;
 }
-export type ChapterTopic = 'the-book-of-daniel' | 'christmas-messy-or-amazing' | 'january-2025-sermons' | 'act-like-men' | 'man-in-the-mirror' | 'james';
+export type ChapterTopic = 'the-book-of-daniel' | 'red-rocks-sermons' | 'act-like-men' | 'man-in-the-mirror' | 'james';
 
 export const getChapterDataByTopic = (topic: ChapterTopic): Map<string, IChapterData> => {
   switch (topic) {
-    case 'christmas-messy-or-amazing':
-      return ChristmasData;
-    case 'january-2025-sermons':
-      return Jan2025SermonsData;
+    case 'red-rocks-sermons':
+      return RedRocksSermons;
     case 'the-book-of-daniel':
       return DanielChapterData;
     case 'act-like-men':
@@ -37,12 +34,10 @@ export const getChapterDataByTopic = (topic: ChapterTopic): Map<string, IChapter
 
 export const topicIdentifierToReadable = (topic: ChapterTopic) => {
   switch (topic) {
-    case 'christmas-messy-or-amazing':
-      return 'Christmas: Messy or Amazing?';
     case 'the-book-of-daniel':
       return 'The Book of Daniel';
-    case 'january-2025-sermons':
-      return 'January 2025 Sermons';
+    case 'red-rocks-sermons':
+      return 'Red Rocks Sermons';
     case 'act-like-men':
       return 'Act Like Men';
     case 'man-in-the-mirror':

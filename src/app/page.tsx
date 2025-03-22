@@ -61,17 +61,10 @@ export default function Home() {
               ))}
             </>
           </NavSectionBlock>
-          <NavSectionBlock name="January 2025 Sermons">
+          <NavSectionBlock name="Red Rocks Sermons">
             <>
-              {Array.from(getChapterDataByTopic('january-2025-sermons')).map(([, value]) => (
-                <NavLink topic="january-2025-sermons" key={value.identifier} chapter={value.identifier} content={`${value.title} - ${value.book}`} />
-              ))}
-            </>
-          </NavSectionBlock>
-          <NavSectionBlock name="Christmas: Messy or Amazing?">
-            <>
-              {Array.from(getChapterDataByTopic('christmas-messy-or-amazing')).map(([, value]) => (
-                <NavLink topic="christmas-messy-or-amazing" key={value.identifier} chapter={value.identifier} content={`${value.title} - ${value.book}`} />
+              {Array.from(getChapterDataByTopic('red-rocks-sermons')).map(([, value]) => (
+                <NavLink topic="red-rocks-sermons" key={value.identifier} chapter={value.identifier} content={`${value.title} - ${value.book}`} />
               ))}
             </>
           </NavSectionBlock>
