@@ -197,4 +197,58 @@ JamesChapterData.set('1', {
         </div>
       </>
     ),
+  })
+  .set('4', {
+    book: 'Partiality, Love, Mercy (James 2:1-13)',
+    title: 'Week 4',
+    identifier: 'week-four',
+    element: (
+      <>
+        <div>
+          <Question
+            question="Read James 2:1–4. Where do you see partiality or favoritism in your own life? How does it manifest in your relationships at work, church, or even within your family?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="James 2:1-4" identifier="jas.2.1-4" />
+              </>
+            )}
+          />
+          <Question
+            question="Read James 2:5–7. Why do people naturally gravitate toward favoring the rich and powerful? What are the underlying fears or desires that drive this behavior, and how can we combat them in our own hearts?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="James 2:5-7" identifier="jas.2.5-7" />
+              </>
+            )}
+          />
+          <Question question="James highlights how God chooses the poor in the world to be rich in faith. How does this challenge the way we measure success, influence, and value in our society today?" />
+        </div>
+        <div>
+          <Question
+            question="Read James 2:8–9. James refers to the command to “love your neighbor as yourself” as the “royal law.” What does this mean in practice, and how can we ensure that our love is not selective but reflects Christ’s love for all people?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="James 2:8-9" identifier="jas.2.8-9" />
+              </>
+            )}
+          />
+          <Question
+            question="Read James 2:10–12. James warns that breaking one part of God’s law makes us accountable for all of it. How does this truth shape our understanding of sin and our need for grace?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="James 2:10-12" identifier="jas.2.10-12" />
+              </>
+            )}
+          />
+          <Question
+            question="Read James 2:13. How have you experienced God’s mercy in your own life? In what ways can you extend that same mercy to others instead of judgment or favoritism?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="James 2:13" identifier="jas.2.13" />
+              </>
+            )}
+          />
+        </div>
+      </>
+    ),
   });
