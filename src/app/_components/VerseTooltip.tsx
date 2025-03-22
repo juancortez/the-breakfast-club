@@ -65,7 +65,7 @@ const VerseModal = ({ verse, identifier, onClose }: VerseModalProps) => {
       setIsLoading(false);
       setError((e as Error)?.message || `Unable to find ${verse}.`);
     }
-  }, [setIsLoading, setContent, setError, identifier, verse, translation?.identifier]);
+  }, [setIsLoading, setContent, setError, identifier, verse, translation]);
 
   useEffect(() => {
     request();
