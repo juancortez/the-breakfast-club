@@ -1,4 +1,5 @@
-import { type NextRequest } from 'next/server';
+import type { AvailableTranslations } from '@/app/_models/Translations.models';
+import type { NextRequest } from 'next/server';
 import { NextResponse } from 'next/server';
 
 const BibleScraper = require('bible-scraper');
@@ -6,8 +7,8 @@ const BibleScraper = require('bible-scraper');
 const ESV_SCRAPER = new BibleScraper(BibleScraper.TRANSLATIONS.ESV);
 const NIV_SCRAPER = new BibleScraper(BibleScraper.TRANSLATIONS.NIV);
 const KJV_SCRAPER = new BibleScraper(BibleScraper.TRANSLATIONS.KJV);
+const MSG_SCRAPER = new BibleScraper(BibleScraper.TRANSLATIONS.MSG);
 
-type AvailableTranslations = 'esv' | 'niv' | 'kjv';
 const getScraper = (translation: AvailableTranslations) => {
   switch (translation) {
     case 'esv':
@@ -16,6 +17,8 @@ const getScraper = (translation: AvailableTranslations) => {
       return NIV_SCRAPER;
     case 'kjv':
       return KJV_SCRAPER;
+    case 'msg':
+      return MSG_SCRAPER;
     default:
       return 'esv';
   }

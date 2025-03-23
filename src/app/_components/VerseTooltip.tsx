@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useState } from 'react';
 import { Spinner } from './Spinner';
 import { useClientContext } from '../_context/ClientContext';
+import type { AvailableTranslations } from '../_models/Translations.models';
 
 interface VerseTooltipProps {
   verse: string;
@@ -14,7 +15,7 @@ interface VerseModalProps extends VerseTooltipProps {
 }
 
 class ApiClient {
-  static async getVerse(identifier: string, options?: { translation: 'esv' | 'niv' | 'kjv' }): Promise<string> {
+  static async getVerse(identifier: string, options?: { translation: AvailableTranslations }): Promise<string> {
     const translation = options?.translation || 'esv';
     const cacheKey = translation + '__' + identifier;
     const cache = localStorage.getItem(cacheKey);
@@ -129,7 +130,7 @@ export function VerseTooltip(props: VerseTooltipProps) {
     <div>
       <span role="button" className="cursor-pointer  text-blue-600 hover:text-blue-800 visited:text-purple-600" onClick={() => setIsVisible((e) => !e)}>
         <svg className="h-4 w-4 text-stone-500 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>{' '}
         {props.verse}
       </span>

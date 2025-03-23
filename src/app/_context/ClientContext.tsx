@@ -16,10 +16,14 @@ type Context = {
         identifier: 'kjv';
         title: 'KJV';
       }
+    | {
+        identifier: 'msg';
+        title: 'The Message';
+      }
     | null;
-
   setTranslationHelper: (_translation: Context['translation']) => void;
 };
+
 export const ClientContext = createContext<Context>({
   translation: null,
   setTranslationHelper: () => {},
