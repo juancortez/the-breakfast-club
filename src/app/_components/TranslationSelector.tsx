@@ -25,8 +25,8 @@ function useOutsideAlerter(ref: RefObject<HTMLElement>, cb: () => void) {
   }, [ref, cb]);
 }
 
-export type Variant = 'ESV' | 'NIV' | 'KJV' | 'The Message';
-const ALL_VARIANTS: Variant[] = ['ESV', 'NIV', 'KJV', 'The Message'];
+export type Variant = 'ESV' | 'NIV' | 'KJV' | 'Message';
+const ALL_VARIANTS: Variant[] = ['ESV', 'NIV', 'KJV', 'Message'];
 const Translation = ({ onSetTranslation, variant }: { onSetTranslation: (translation: Variant) => void; variant: Variant }) => {
   return (
     <button
@@ -86,10 +86,10 @@ export const TranslationSelector = () => {
             identifier: 'kjv',
             title: 'KJV',
           });
-        case 'The Message':
+        case 'Message':
           return setTranslationHelper({
             identifier: 'msg',
-            title: 'The Message',
+            title: 'Message',
           });
         default:
           setTranslationHelper({
@@ -117,7 +117,7 @@ export const TranslationSelector = () => {
             aria-controls="headlessui-menu-items-117"
             onClick={() => setShow((s) => !s)}
           >
-            <span>{translation?.title || 'Translation'}</span>
+            <span className="w-16">{translation?.title || 'Translation'}</span>
             <svg className="w-5 h-5 ml-2 -mr-1" viewBox="0 0 20 20" fill="currentColor">
               <path
                 fillRule="evenodd"

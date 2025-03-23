@@ -18,7 +18,7 @@ type Context = {
       }
     | {
         identifier: 'msg';
-        title: 'The Message';
+        title: 'Message';
       }
     | null;
   setTranslationHelper: (_translation: Context['translation']) => void;
