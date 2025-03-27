@@ -7,7 +7,6 @@ import { ClientProvider } from './_context/ClientContext';
 import { TranslationSelector } from './_components/TranslationSelector';
 
 const inter = Inter({ subsets: ['latin'] });
-const DOMAIN = process.env.NEXT_PUBLIC_VERCEL_URL;
 
 export const metadata: Metadata = {
   title: 'The Breakfast Club',
@@ -41,7 +40,7 @@ export default function RootLayout({
           </ClientProvider>
         </main>
       </body>
-      <SpeedInsights />
+      {process.env.NODE_ENV === 'production' && <SpeedInsights />}
     </html>
   );
 }

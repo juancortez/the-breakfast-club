@@ -93,4 +93,22 @@ ActLikeMen.set('1', {
         </div>
       </>
     ),
+  })
+  .set('6', {
+    book: 'Truly - as good as it gets',
+    title: 'Truly - as good as it gets',
+    identifier: 'truly-as-good-as-it-gets',
+    element: (
+      <>
+        <div>
+          <Question question="How does the truth that your heavenly Father is perfect impact you today?" />
+          <Question question="Do you find God’s perfection motivating to your growth or overwhelming? Why?" />
+          <Question question="Imagine if a light were shone on your character—what leaks would be revealed?" />
+        </div>
+        <div>
+          <Question question="List those areas most needing attention as you pursue quality manhood." />
+          <Question question="Name a specific action you can take today to advance your pursuit of quality manhood." />
+        </div>
+      </>
+    ),
   });

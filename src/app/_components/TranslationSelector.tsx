@@ -2,6 +2,7 @@
 
 import React, { RefObject, useCallback, useEffect, useRef, useState } from 'react';
 import { useClientContext } from '../_context/ClientContext';
+import { usePathname } from 'next/navigation';
 
 /**
  * Hook that alerts clicks outside of the passed ref
@@ -42,6 +43,7 @@ const Translation = ({ onSetTranslation, variant }: { onSetTranslation: (transla
 
 export const TranslationSelector = () => {
   const { translation, setTranslationHelper } = useClientContext();
+  const path = usePathname();
   const [show, setShow] = useState<boolean>();
   const wrapperRef = useRef(null);
   const onOutsideClick = useCallback(() => {
@@ -102,6 +104,10 @@ export const TranslationSelector = () => {
   );
 
   if (!translation) {
+    return null;
+  }
+
+  if (path === '/') {
     return null;
   }
 
