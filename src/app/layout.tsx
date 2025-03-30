@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import { SpeedInsights } from '@vercel/speed-insights/next';
 import './globals.css';
 import Link from 'next/link';
 import { ClientProvider } from './_context/ClientContext';
@@ -40,7 +39,6 @@ export default function RootLayout({
           </ClientProvider>
         </main>
       </body>
-      {process.env.NODE_ENV === 'production' && <SpeedInsights />}
     </html>
   );
 }
