@@ -111,4 +111,22 @@ ActLikeMen.set('1', {
         </div>
       </>
     ),
+  })
+  .set('7', {
+    book: 'Disneyland Quality',
+    title: 'Disneyland Quality',
+    identifier: 'disneyland-quality',
+    element: (
+      <>
+        <div>
+          <Question question="Where have you seen quality manhood displayed in your everyday life?" />
+          <Question question="What specifically do you note in that man’s example that you can emulate?" />
+          <Question question="What is harder for you, right actions or right timing? Why?" />
+        </div>
+        <div>
+          <Question question="In what ways is our challenge easier or harder than the life Jesus lived?" />
+          <Question question="Describe a pastor or spiritual leader you have watched as a quality man." />
+        </div>
+      </>
+    ),
   });
