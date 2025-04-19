@@ -6,7 +6,6 @@ import { IChapterData } from '../data';
 export const RedRocksSermons = new Map<string, IChapterData>();
 RedRocksSermons.set('1', {
   book: 'Christmas: Messy or Amazing?',
-  title: 'Dec 26, 2023',
   identifier: 'questions',
   overview: (
     <p>
@@ -14,7 +13,7 @@ RedRocksSermons.set('1', {
       <a className="hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="https://www.youtube.com/watch?v=7B9Huh-4fdA">
         Christmas: Messy or Amazing? | Pastor Shawn Johnson
       </a>{' '}
-      sermon.
+      sermon from Dec 26, 2023.
     </p>
   ),
   element: (
@@ -51,7 +50,6 @@ RedRocksSermons.set('1', {
 })
   .set('2', {
     book: 'Made on Purpose, For a Purpose',
-    title: 'January 12, 2025',
     identifier: 'made-on-purpose',
     overview: (
       <p>
@@ -59,7 +57,7 @@ RedRocksSermons.set('1', {
         <a className="hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300" href="https://www.youtube.com/watch?v=3c55Gweg_m4">
           Made on Purpose, For a Purpose | Pastor Doug Wekenman
         </a>{' '}
-        sermon.
+        sermon from January 12, 2025.
       </p>
     ),
     element: (
@@ -94,12 +92,11 @@ RedRocksSermons.set('1', {
   })
   .set('3', {
     book: 'Get Ready to Change the World',
-    title: 'January 19, 2025',
     identifier: 'ready-to-change-world',
     overview: (
       <p>
         Discussion questions for <AppLink href="https://www.youtube.com/watch?v=MSMQRyOyLQw&t=1s" content="Get Ready to Change the World | Ethan Matott" />{' '}
-        sermon.
+        sermon from January 19, 2025.
       </p>
     ),
     element: (

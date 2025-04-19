@@ -4,7 +4,6 @@ import { IChapterData } from '../data';
 export const ActLikeMen = new Map<string, IChapterData>();
 ActLikeMen.set('1', {
   book: 'Acting Like Men',
-  title: 'Acting Like Men',
   identifier: 'acting-like-men',
   element: (
     <>
@@ -23,7 +22,6 @@ ActLikeMen.set('1', {
 })
   .set('2', {
     book: 'Quality Man',
-    title: 'A Quality Man',
     identifier: 'a-quality-man',
     element: (
       <>
@@ -42,7 +40,6 @@ ActLikeMen.set('1', {
   })
   .set('3', {
     book: 'Not a Quality Man',
-    title: 'Not a Quality Man',
     identifier: 'not-a-quality-man',
     element: (
       <>
@@ -60,7 +57,6 @@ ActLikeMen.set('1', {
   })
   .set('4', {
     book: 'And the gold goes to...',
-    title: 'And the gold goes to...',
     identifier: 'and-the-gold-goes-to',
     element: (
       <>
@@ -78,7 +74,6 @@ ActLikeMen.set('1', {
   })
   .set('5', {
     book: 'What are you looking at?',
-    title: 'What are you looking at?',
     identifier: 'what-are-you-looking-at',
     element: (
       <>
@@ -96,7 +91,6 @@ ActLikeMen.set('1', {
   })
   .set('6', {
     book: 'Truly - as good as it gets',
-    title: 'Truly - as good as it gets',
     identifier: 'truly-as-good-as-it-gets',
     element: (
       <>
@@ -114,7 +108,6 @@ ActLikeMen.set('1', {
   })
   .set('7', {
     book: 'Disneyland Quality',
-    title: 'Disneyland Quality',
     identifier: 'disneyland-quality',
     element: (
       <>
@@ -126,6 +119,21 @@ ActLikeMen.set('1', {
         <div>
           <Question question="In what ways is our challenge easier or harder than the life Jesus lived?" />
           <Question question="Describe a pastor or spiritual leader you have watched as a quality man." />
+        </div>
+      </>
+    ),
+  })
+  .set('8', {
+    book: 'Let Your Partner Take the Lead',
+    identifier: 'let-your-partner-take-the-lead',
+    element: (
+      <>
+        <div>
+          <Question question="Describe two or three specific ways God has been working on your life through His Word." />
+          <Question question="What are some of your personal observations of the Holy Spirit at work in those around you?" />
+        </div>
+        <div>
+          <Question question=" If someone called you a quality man, what do you think they would be referring to the most? In what ways might they suggest you can improve?" />
         </div>
       </>
     ),

@@ -49,7 +49,7 @@ export default function Home() {
           <NavSectionBlock name="The Book of James">
             <>
               {Array.from(getChapterDataByTopic('james')).map(([, value]) => (
-                <NavLink topic="james" key={value.identifier} chapter={value.identifier} content={`${value.book}`} />
+                <NavLink topic="james" key={value.identifier} chapter={value.identifier} content={value.book} />
               ))}
             </>
           </NavSectionBlock>
@@ -57,28 +57,28 @@ export default function Home() {
           <NavSectionBlock name="Act Like Men">
             <>
               {Array.from(getChapterDataByTopic('act-like-men')).map(([, value]) => (
-                <NavLink topic="act-like-men" key={value.identifier} chapter={value.identifier} content={`${value.book}`} />
+                <NavLink topic="act-like-men" key={value.identifier} chapter={value.identifier} content={value.book} />
               ))}
             </>
           </NavSectionBlock>
           <NavSectionBlock name="Red Rocks Sermons">
             <>
               {Array.from(getChapterDataByTopic('red-rocks-sermons')).map(([, value]) => (
-                <NavLink topic="red-rocks-sermons" key={value.identifier} chapter={value.identifier} content={`${value.title} - ${value.book}`} />
+                <NavLink topic="red-rocks-sermons" key={value.identifier} chapter={value.identifier} content={value.book} />
               ))}
             </>
           </NavSectionBlock>
           <NavSectionBlock name="The Book of Daniel">
             <>
               {Array.from(getChapterDataByTopic('the-book-of-daniel')).map(([, value]) => (
-                <NavLink topic="the-book-of-daniel" key={value.identifier} chapter={value.identifier} content={`${value.title} - ${value.book}`} />
+                <NavLink topic="the-book-of-daniel" key={value.identifier} chapter={value.identifier} content={value.book} />
               ))}
             </>
           </NavSectionBlock>
           <NavSectionBlock name="Man in the Mirror">
             <>
               {Array.from(getChapterDataByTopic('man-in-the-mirror')).map(([, value]) => (
-                <NavLink topic="man-in-the-mirror" key={value.identifier} chapter={value.identifier} content={`${value.title}`} />
+                <NavLink topic="man-in-the-mirror" key={value.identifier} chapter={value.identifier} content={value.book} />
               ))}
             </>
           </NavSectionBlock>

@@ -8,7 +8,6 @@ export interface IChapterData {
   book: string;
   identifier: string;
   element: JSX.Element;
-  title: string;
   overview?: JSX.Element;
   // https://tailwindcomponents.com/gradient-generator/
   gradient?: string;

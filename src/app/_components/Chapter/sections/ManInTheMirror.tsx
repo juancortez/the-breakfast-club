@@ -5,7 +5,6 @@ import { IChapterData } from '../data';
 export const ManInTheMirrorData = new Map<string, IChapterData>();
 ManInTheMirrorData.set('1', {
   book: 'The Rat Race',
-  title: 'The Rat Race',
   identifier: 'the-rat-race',
   element: (
     <>
@@ -23,7 +22,6 @@ ManInTheMirrorData.set('1', {
 })
   .set('2', {
     book: 'Leading an Unexamined Life',
-    title: 'Leading an Unexamined Life',
     identifier: 'leading-an-unexamined-life',
     gradient: 'bg-gradient-to-r from-indigo-400  via-yellow-500 to-green-500',
     element: (
@@ -51,7 +49,6 @@ ManInTheMirrorData.set('1', {
   })
   .set('3', {
     book: 'Biblical Christian or Cultural Christian?',
-    title: 'Biblical Christian or Cultural Christian?',
     identifier: 'biblical-christian-or-cultural-christian',
     gradient: 'bg-gradient-to-r from-teal-400 to-yellow-200',
     element: (
@@ -74,7 +71,6 @@ ManInTheMirrorData.set('1', {
   })
   .set('4', {
     book: 'Significance',
-    title: 'Significance',
     gradient: 'bg-gradient-to-r from-amber-200 to-yellow-500',
     identifier: 'significance',
     element: (
@@ -96,7 +92,6 @@ ManInTheMirrorData.set('1', {
   })
   .set('5', {
     book: 'Purpose',
-    title: 'Purpose',
     gradient: 'bg-gradient-to-r from-blue-800 to-indigo-900',
     identifier: 'purpose',
     element: (
@@ -133,7 +128,6 @@ ManInTheMirrorData.set('1', {
   })
   .set('6', {
     book: 'The Secret of Job Contentment',
-    title: 'The Secret of Job Contentment',
     identifier: 'secret-of-job-contentment',
     gradient: 'bg-gradient-to-r from-fuchsia-600 to-purple-600',
     element: (
@@ -178,7 +172,6 @@ ManInTheMirrorData.set('1', {
   })
   .set('7', {
     book: 'Broken Relationships',
-    title: 'Broken Relationships',
     identifier: 'broken-relationships',
     gradient: 'bg-gradient-to-r from-teal-400 to-yellow-200',
     element: (
@@ -200,7 +193,6 @@ ManInTheMirrorData.set('1', {
   })
   .set('8', {
     book: 'Children',
-    title: 'Children',
     identifier: 'children',
     gradient: 'bg-gradient-to-r from-emerald-500 to-emerald-900',
     element: (
@@ -221,7 +213,6 @@ ManInTheMirrorData.set('1', {
   })
   .set('9', {
     book: 'Wives',
-    title: 'Wives',
     identifier: 'wives',
     gradient: 'bg-gradient-to-r from-violet-200 to-pink-200',
     element: (
@@ -249,7 +240,6 @@ ManInTheMirrorData.set('1', {
   })
   .set('10', {
     book: 'Friends',
-    title: 'Friends',
     identifier: 'friends',
     gradient: 'bg-gradient-to-r from-blue-200 to-cyan-200',
     element: (
@@ -271,7 +261,6 @@ ManInTheMirrorData.set('1', {
   })
   .set('11', {
     book: 'Money',
-    title: 'Money',
     identifier: 'money',
     gradient: 'bg-gradient-to-r from-lime-400 to-lime-500',
     element: (
@@ -331,7 +320,6 @@ ManInTheMirrorData.set('1', {
   })
   .set('12', {
     book: 'The 4 Pillars of Financial Strength',
-    title: 'The 4 Pillars of Financial Strength',
     identifier: '4-pillars-of-financial-strength',
     gradient: 'bg-gradient-to-r from-teal-200 to-teal-500',
     element: (
@@ -385,7 +373,6 @@ ManInTheMirrorData.set('1', {
   })
   .set('13', {
     book: 'Decisions',
-    title: 'Decisions',
     identifier: 'decisions',
     gradient: 'bg-gradient-to-r from-purple-500 to-purple-900',
     element: (
@@ -415,7 +402,6 @@ ManInTheMirrorData.set('1', {
   })
   .set('14', {
     book: 'Priorities',
-    title: 'Priorities',
     identifier: 'priorities',
     gradient: 'bg-gradient-to-r from-blue-600 to-violet-600',
     element: (
@@ -476,7 +462,6 @@ ManInTheMirrorData.set('1', {
   })
   .set('15', {
     book: 'Time Management',
-    title: 'Time Management',
     identifier: 'time-management',
     gradient: 'bg-gradient-to-r from-violet-200 to-pink-200',
     element: (
@@ -520,7 +505,6 @@ ManInTheMirrorData.set('1', {
   })
   .set('16', {
     book: 'Pride',
-    title: 'Pride',
     identifier: 'pride',
     gradient: 'bg-gradient-to-r from-green-400 to-blue-500',
     element: (
@@ -579,7 +563,6 @@ ManInTheMirrorData.set('1', {
   })
   .set('17', {
     book: 'Fear',
-    title: 'Fear',
     identifier: 'fear',
     gradient: 'bg-gradient-to-r from-purple-400 via-pink-500 to-red-500',
     element: (
@@ -653,7 +636,6 @@ ManInTheMirrorData.set('1', {
   })
   .set('18', {
     book: 'Anger',
-    title: 'Anger',
     identifier: 'anger',
     gradient: 'bg-gradient-to-r from-red-900 to-red-500',
     element: (
@@ -713,7 +695,6 @@ ManInTheMirrorData.set('1', {
   })
   .set('19', {
     book: 'The Desire to be Independent',
-    title: 'The Desire to be Independent',
     identifier: 'the-desire-to-be-independent',
     gradient: 'bg-gradient-to-r from-violet-600 to-indigo-600',
     element: (
@@ -762,7 +743,6 @@ ManInTheMirrorData.set('1', {
   })
   .set('20', {
     book: 'Avoiding Suffering',
-    title: 'Avoiding Suffering',
     identifier: 'avoiding-suffering',
     gradient: 'bg-gradient-to-r from-blue-800 to-indigo-900',
     element: (
@@ -823,7 +803,6 @@ ManInTheMirrorData.set('1', {
   })
   .set('21', {
     book: 'Integrity',
-    title: 'Integrity',
     identifier: 'integrity',
     gradient: 'bg-gradient-to-r from-indigo-500 to-blue-500',
     element: (
@@ -851,7 +830,6 @@ ManInTheMirrorData.set('1', {
   })
   .set('22', {
     book: 'Leading a Secret Thought Life',
-    title: 'Leading a Secret Thought Life',
     identifier: 'leading-a-secret-thought-life',
     gradient: 'bg-gradient-to-r from-rose-400 to-red-500',
     element: (
@@ -889,7 +867,6 @@ ManInTheMirrorData.set('1', {
   })
   .set('23', {
     book: 'Accountability',
-    title: 'Accountability',
     identifier: 'accountability',
     gradient: 'bg-gradient-to-r from-amber-200 to-yellow-500',
     element: (
@@ -921,7 +898,6 @@ ManInTheMirrorData.set('1', {
   })
   .set('24', {
     book: 'How can a Man Change?',
-    title: 'How can a Man Change?',
     identifier: 'how-can-a-man-change',
     gradient: 'bg-gradient-to-r from-emerald-500 to-emerald-900',
     element: (

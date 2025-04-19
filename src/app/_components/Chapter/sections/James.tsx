@@ -5,7 +5,6 @@ import { IChapterData } from '../data';
 export const JamesChapterData = new Map<string, IChapterData>();
 JamesChapterData.set('1', {
   book: 'Joy, Wisdom, & Trust (James 1:1-11)',
-  title: 'Week 1',
   identifier: 'week-one',
   overview: (
     <div>
@@ -71,7 +70,6 @@ JamesChapterData.set('1', {
 })
   .set('2', {
     book: 'Endurance, Temptation, Sin, & Faithfulness (James 1:12-18)',
-    title: 'Week 2',
     identifier: 'week-two',
     overview: (
       <div>
@@ -145,7 +143,6 @@ JamesChapterData.set('1', {
   })
   .set('3', {
     book: 'Listen, Obey, Reflect (James 1:19-27)',
-    title: 'Week 3',
     identifier: 'week-three',
     overview: (
       <div>
@@ -200,7 +197,6 @@ JamesChapterData.set('1', {
   })
   .set('4', {
     book: 'Partiality, Love, Mercy (James 2:1-13)',
-    title: 'Week 4',
     identifier: 'week-four',
     overview: (
       <div>

@@ -4,7 +4,6 @@ import { IChapterData } from '../data';
 export const DanielChapterData = new Map<string, IChapterData>();
 DanielChapterData.set('1', {
   book: 'Faith in Exile',
-  title: 'Week 1',
   identifier: 'daniel-week-one',
   element: (
     <>
@@ -21,7 +20,6 @@ DanielChapterData.set('1', {
 })
   .set('2', {
     book: 'Nebuchadnezzar’s Dream',
-    title: 'Week 2',
     identifier: 'daniel-week-two',
     element: (
       <>
@@ -37,7 +35,6 @@ DanielChapterData.set('1', {
   })
   .set('3', {
     book: 'The Fiery Furnace',
-    title: 'Week 3',
     identifier: 'daniel-week-three',
     element: (
       <>
@@ -54,7 +51,6 @@ DanielChapterData.set('1', {
   .set('4', {
     book: 'Nebuchadnezzar’s Humbling & the Fall of Babylon',
     identifier: 'daniel-week-four',
-    title: 'Week 4',
     element: (
       <>
         <div>
@@ -70,7 +66,6 @@ DanielChapterData.set('1', {
   .set('5', {
     book: 'Daniel in the Lion’s Den',
     identifier: 'daniel-week-five',
-    title: 'Week 5',
     element: (
       <>
         <div>
@@ -86,7 +81,6 @@ DanielChapterData.set('1', {
   .set('6', {
     book: 'Visions of the Future ',
     identifier: 'daniel-week-six',
-    title: 'Week 6',
     element: (
       <>
         <div>
