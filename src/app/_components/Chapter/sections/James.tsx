@@ -273,4 +273,68 @@ JamesChapterData.set('1', {
         </div>
       </>
     ),
+  })
+  .set('5', {
+    book: 'Trust, Act, Conquer (James 2:14–26)',
+    identifier: 'week-five',
+    overview: (
+      <div>
+        <h2 className="flex mb-4 text-lg font-medium text-gray-900 dark:text-white">Overview</h2>
+
+        <p>
+          To this point in his letter, James has been making the case that once the new birth has happened to a person, it should result in a life of doing
+          God’s word. In the first part of James 2, he began working that principle out in one specific example—his readers’ wrong practice of showing
+          partiality to the rich and powerful.
+        </p>
+
+        <br />
+
+        <p>
+          Now, in James 2:14–26, he returns to the principle itself, arguing theologically and biblically for its truth. Faith, James argues, always results in
+          a life of obedience and good works. And a “faith” that does not do so is not saving faith at all; it is, rather, dead faith.
+        </p>
+
+        <hr className="border-t border-gray-200 dark:border-gray-700 mt-4"></hr>
+      </div>
+    ),
+    element: (
+      <>
+        <div>
+          <Question
+            question="Read James 2:14-17. James starts with a challenging question: can faith without works save us? How does James describe a so-called 'faith' that only talks but doesn't act, and why is that dangerous for us as men today?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="James 2:14-17" identifier="jas.2.14-17" />
+              </>
+            )}
+          />
+          <Question
+            question="Read James 2:18-20. Demons believe in God and tremble — what does it look like for a man to move beyond belief and actually live his trust in God?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="James 2:18-20" identifier="jas.2.18-20" />
+              </>
+            )}
+          />
+        </div>
+        <div>
+          <Question
+            question="Read James 2:21–25. James shows two examples — Abraham risking his son and Rahab risking her life. What do these examples teach us about how real faith will stretch us into risky, courageous obedience? How is God calling you to take a step of living faith today?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="James 2:21–25" identifier="jas.2.21-25" />
+              </>
+            )}
+          />
+          <Question
+            question="Read James 2:26. James wraps it up by comparing faith without works to a corpse — no life, no movement. What are some signs of 'dead faith' that men need to watch out for? What does it look like for you to have a living, breathing faith this week?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="James 2:26" identifier="jas.2.26" />
+              </>
+            )}
+          />
+        </div>
+      </>
+    ),
   });
