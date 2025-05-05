@@ -337,4 +337,71 @@ JamesChapterData.set('1', {
         </div>
       </>
     ),
+  })
+  .set('6', {
+    book: 'Discipline, Wisdom, & Integrity (James 3:1-8)',
+    identifier: 'week-six',
+    overview: (
+      <div>
+        <h2 className="flex mb-4 text-lg font-medium text-gray-900 dark:text-white">Exogenic Dimensions</h2>
+
+        <i>
+          How the truths of this passage confront and apply to the external realities of our modern lives—especially in culture, leadership, communication, and
+          the formation of men today.
+        </i>
+
+        <br />
+        <br />
+
+        <p>
+          James 3:1–18 confronts today’s culture of loud, prideful speech by calling men to a higher standard—one where true strength is measured not by
+          dominance but by self-controlled, peace-making words rooted in godly wisdom. In a world full of noise and ambition, this passage demands that men lead
+          with integrity, tame their tongues, and reflect Christ through meekness and purity.
+        </p>
+
+        <br />
+
+        <hr className="border-t border-gray-200 dark:border-gray-700 mt-4"></hr>
+      </div>
+    ),
+    element: (
+      <>
+        <div>
+          <Question
+            question="Read James 3:1–5. Strong men don’t just lead—they lead with their words; where in your life do you need greater discipline over your tongue, and what does that say about the direction of your heart?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="James 3:1-5" identifier="jas.3.1-5" />
+              </>
+            )}
+          />
+          <Question
+            question="Read James 3:6–8. When have your words either built up or torn down, and what does that reveal about your maturity as a man of God?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="James 3:6-8" identifier="jas.3.6-8" />
+              </>
+            )}
+          />
+        </div>
+        <div>
+          <Question
+            question="Read James 3:9–12. How can you grow into a man who refuses to bless God on Sunday and curse people on Monday—and instead speaks with integrity everywhere?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="James 3:9-12" identifier="jas.3.9-12" />
+              </>
+            )}
+          />
+          <Question
+            question="Read James 3:13–18. Are you living with the bold humility and peace that marks true wisdom from above, or are pride and selfish ambition silently leading your life?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="James 3:13-18" identifier="jas.3.13-18" />
+              </>
+            )}
+          />
+        </div>
+      </>
+    ),
   });
