@@ -7,7 +7,7 @@ function findChapterByShortName(data: Map<string, IChapterData>, chapter: string
   let chapterData: IChapterData | undefined;
 
   data.forEach((e) => {
-    if (e.identifier === chapter) {
+    if (e.identifier.startsWith(chapter)) {
       chapterData = e;
     }
   });

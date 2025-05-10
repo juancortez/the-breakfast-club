@@ -5,7 +5,7 @@ import { IChapterData } from '../data';
 export const JamesChapterData = new Map<string, IChapterData>();
 JamesChapterData.set('1', {
   book: 'Joy, Wisdom, & Trust (James 1:1-11)',
-  identifier: 'week-one',
+  identifier: 'week-one#joy-wisdom-trust',
   overview: (
     <div>
       <h2 className="flex mb-4 text-lg font-medium text-gray-900 dark:text-white">Exegetical Context of James 1</h2>
@@ -70,7 +70,7 @@ JamesChapterData.set('1', {
 })
   .set('2', {
     book: 'Endurance, Temptation, Sin, & Faithfulness (James 1:12-18)',
-    identifier: 'week-two',
+    identifier: 'week-two#endurance-temptation-sin-faithfulness',
     overview: (
       <div>
         <h2 className="flex mb-4 text-lg font-medium text-gray-900 dark:text-white">Overview</h2>
@@ -143,7 +143,7 @@ JamesChapterData.set('1', {
   })
   .set('3', {
     book: 'Listen, Obey, Reflect (James 1:19-27)',
-    identifier: 'week-three',
+    identifier: 'week-three#listen-obey-reflect',
     overview: (
       <div>
         <h2 className="flex mb-4 text-lg font-medium text-gray-900 dark:text-white">Overview</h2>
@@ -197,7 +197,7 @@ JamesChapterData.set('1', {
   })
   .set('4', {
     book: 'Partiality, Love, Mercy (James 2:1-13)',
-    identifier: 'week-four',
+    identifier: 'week-four#partiality-love-mercy',
     overview: (
       <div>
         <h2 className="flex mb-4 text-lg font-medium text-gray-900 dark:text-white">Exegetical Context of James 2:1–13</h2>
@@ -276,7 +276,7 @@ JamesChapterData.set('1', {
   })
   .set('5', {
     book: 'Trust, Act, Conquer (James 2:14–26)',
-    identifier: 'week-five',
+    identifier: 'week-five#trust-act-conquer',
     overview: (
       <div>
         <h2 className="flex mb-4 text-lg font-medium text-gray-900 dark:text-white">Overview</h2>
@@ -340,7 +340,7 @@ JamesChapterData.set('1', {
   })
   .set('6', {
     book: 'Discipline, Wisdom, & Integrity (James 3:1-8)',
-    identifier: 'week-six',
+    identifier: 'week-six#discipline-wisdom-integrity',
     overview: (
       <div>
         <h2 className="flex mb-4 text-lg font-medium text-gray-900 dark:text-white">Exogenic Dimensions</h2>
@@ -398,6 +398,65 @@ JamesChapterData.set('1', {
             renderReference={() => (
               <>
                 <VerseTooltip verse="James 3:13-18" identifier="jas.3.13-18" />
+              </>
+            )}
+          />
+        </div>
+      </>
+    ),
+  })
+  .set('7', {
+    book: 'Desire, Repent, Submit (James 4:1-12)',
+    identifier: 'week-7#jas.4.1-12',
+    overview: (
+      <div>
+        <h2 className="flex mb-4 text-lg font-medium text-gray-900 dark:text-white">The Place of the Passage</h2>
+
+        <p>
+          In James 3, the author began dealing with the problem of quarreling and backbiting within the church. The immediate issue seems to have been people
+          competing with one another for position within the church (James 3:1), and they were using their tongues to tear one another down. Having spoken about
+          the tongue’s evil and the power of wisdom to counteract it, James turns in James 4 to consider the quarrels themselves. In a brilliant explanation of
+          human nature, fallen as it is, he shows that quarrels are the result of unfulfilled, prideful desires warring within us, and he then exhorts his
+          readers to repent of their pride.
+        </p>
+
+        <hr className="border-t border-gray-200 dark:border-gray-700 mt-4"></hr>
+      </div>
+    ),
+    element: (
+      <>
+        <div>
+          <Question
+            question="Read James 4:1–3. What personal desires or frustrations are causing conflict in your life—and how do they affect your relationship with others and with God?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="James 4:1-3" identifier="jas.4.1-3" />
+              </>
+            )}
+          />
+          <Question
+            question="Read James 4:4–6. Are there areas in your life where you're chasing what the world offers instead of what God wants—and how can you begin turning back to Him?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="James 4:4–6" identifier="jas.4.4-6" />
+              </>
+            )}
+          />
+        </div>
+        <div>
+          <Question
+            question="Read James 4:7–10. What does it look like to start choosing God's way instead of going your own way—and how can you begin resisting temptation today?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="James 4:7–10" identifier="jas.4.7-10" />
+              </>
+            )}
+          />
+          <Question
+            question="Read James 4:11–12. Why is it wrong to speak badly about others—and how does judging people get in the way of loving them like God tells us to?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="James 4:11-12" identifier="jas.4.11-12" />
               </>
             )}
           />
