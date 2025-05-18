@@ -463,4 +463,63 @@ JamesChapterData.set('1', {
         </div>
       </>
     ),
+  })
+  .set('8', {
+    book: 'Pride, Injustice & Judgment (James 4:13-5:6)',
+    identifier: 'week-8#jas.4.13-5.6',
+    overview: (
+      <div>
+        <h2 className="flex mb-4 text-lg font-medium text-gray-900 dark:text-white">The Place of the Passage</h2>
+
+        <p>
+          In this passage, James continues to unfold his main point that new life in Christ should result in a life of obedience to God’s Word. Here he
+          addresses particularly the sins of the wealthy. First he addresses the sin of pride in those who would forget that their lives are completely in the
+          hand of the Lord. Then he turns to warn of the coming judgment against those who would use their wealth and power to oppress God’s people. This is
+          some of the most strident language in the book, and it underlines the sin and folly of human pride—especially when our pride sets us in opposition to
+          God and his people.
+        </p>
+
+        <hr className="border-t border-gray-200 dark:border-gray-700 mt-4"></hr>
+      </div>
+    ),
+    element: (
+      <>
+        <div>
+          <Question
+            question="Read: James 4:13–14. What does planning without reference to God reveal about our view of life and His sovereignty?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="James 4:13-14" identifier="jas.4.13-14" />
+              </>
+            )}
+          />
+          <Question
+            question="Read James 4:15–17. How can we rightly plan for the future while living in humble dependence on God's will?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="James 4:15-17" identifier="jas.4.15-17" />
+              </>
+            )}
+          />
+        </div>
+        <div>
+          <Question
+            question="Read James 5:1–4. What injustices are condemned here, and how might similar forms of oppression appear in our world today?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="James 5:1-14" identifier="jas.5.1-4" />
+              </>
+            )}
+          />
+          <Question
+            question="Read James 5:5–6. How does the warning of coming judgment challenge us to evaluate how we use wealth, comfort, and power?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="James 5.5-6" identifier="jas.5.5-6" />
+              </>
+            )}
+          />
+        </div>
+      </>
+    ),
   });
