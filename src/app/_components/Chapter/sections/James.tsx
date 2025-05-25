@@ -465,7 +465,7 @@ JamesChapterData.set('1', {
     ),
   })
   .set('8', {
-    book: 'Pride, Injustice & Judgment (James 4:13-5:6)',
+    book: 'Pride, Injustice,5:7-12 & Judgment (James 4:13-5:6)',
     identifier: 'week-8#jas.4.13-5.6',
     overview: (
       <div>
@@ -486,7 +486,7 @@ JamesChapterData.set('1', {
       <>
         <div>
           <Question
-            question="Read: James 4:13–14. What does planning without reference to God reveal about our view of life and His sovereignty?"
+            question="Read James 4:13–14. What does planning without reference to God reveal about our view of life and His sovereignty?"
             renderReference={() => (
               <>
                 <VerseTooltip verse="James 4:13-14" identifier="jas.4.13-14" />
@@ -516,6 +516,56 @@ JamesChapterData.set('1', {
             renderReference={() => (
               <>
                 <VerseTooltip verse="James 5.5-6" identifier="jas.5.5-6" />
+              </>
+            )}
+          />
+        </div>
+      </>
+    ),
+  })
+  .set('9', {
+    book: 'Patience, Integrity, & Endurance (James 5:7-12)',
+    identifier: 'week-9#jas.5.7-12',
+    overview: (
+      <div>
+        <h2 className="flex mb-4 text-lg font-medium text-gray-900 dark:text-white">The Place of the Passage</h2>
+
+        <p>
+          Having warned the rich and powerful oppressors of God’s people about the coming judgment, James turns now to encourage the church with the same
+          reality. One day, Jesus Christ will come again to rescue his people from those who oppress and persecute them. He will put an end to injustice and
+          evil. In light of that reality, God’s people should live and wait patiently, as a farmer waits patiently for his crops to grow from the earth. That
+          patience is warranted precisely because God has shown himself faithful. He will, without fail, keep his promises, just as he always has.
+        </p>
+
+        <hr className="border-t border-gray-200 dark:border-gray-700 mt-4"></hr>
+      </div>
+    ),
+    element: (
+      <>
+        <div>
+          <Question
+            question="Read James 5:7–9. James urges us to be patient like a farmer and to establish our hearts because “the coming of the Lord is at hand.” Where in your life are you tempted to rush instead of wait? What does a strong man do when the harvest is slow and the pressure is high?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="James 5:7-9" identifier="jas.5.7-9" />
+              </>
+            )}
+          />
+          <Question
+            question="Read James 5:10-11. James points to the prophets and Job as examples of patience in suffering. What can we learn from them about facing hardship without giving up or giving in? How do the compassion and purpose of the Lord give you strength to endure?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="James 5:10-11" identifier="jas.5.10-11" />
+              </>
+            )}
+          />
+        </div>
+        <div>
+          <Question
+            question="Read James 5:12. James challenges us to let our “yes” be yes and our “no” be no. Why does integrity matter so much for men of faith? How does a heart that’s anchored in Christ show up in how you speak and follow through?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="James 5:12" identifier="jas.5.12" />
               </>
             )}
           />
