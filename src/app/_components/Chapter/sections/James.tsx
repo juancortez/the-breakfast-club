@@ -465,7 +465,7 @@ JamesChapterData.set('1', {
     ),
   })
   .set('8', {
-    book: 'Pride, Injustice,5:7-12 & Judgment (James 4:13-5:6)',
+    book: 'Pride, Injustice, & Judgment (James 4:13-5:6)',
     identifier: 'week-8#jas.4.13-5.6',
     overview: (
       <div>
