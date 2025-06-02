@@ -133,7 +133,23 @@ ActLikeMen.set('1', {
           <Question question="What are some of your personal observations of the Holy Spirit at work in those around you?" />
         </div>
         <div>
-          <Question question=" If someone called you a quality man, what do you think they would be referring to the most? In what ways might they suggest you can improve?" />
+          <Question question="If someone called you a quality man, what do you think they would be referring to the most? In what ways might they suggest you can improve?" />
+        </div>
+      </>
+    ),
+  })
+  .set('9', {
+    book: 'Keep Your Head Up',
+    identifier: 'keep-your-head-up',
+    element: (
+      <>
+        <div>
+          <Question question="Why is it so hard for men to stay focused on what matters most?" />
+          <Question question="What is your biggest distraction from the priority of watching out for your family?" />
+        </div>
+        <div>
+          <Question question="What are the biggest threats currently to God’s best for your family and what can you do today to neutralize those threats?" />
+          <Question question="How might reviewing your God-given role with family members help you do your job more effectively?" />
         </div>
       </>
     ),
