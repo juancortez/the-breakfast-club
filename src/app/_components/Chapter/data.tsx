@@ -11,6 +11,7 @@ export interface IChapterData {
   overview?: JSX.Element;
   // https://tailwindcomponents.com/gradient-generator/
   gradient?: string;
+  conclusion?: JSX.Element;
 }
 export type ChapterTopic = 'the-book-of-daniel' | 'red-rocks-sermons' | 'act-like-men' | 'man-in-the-mirror' | 'james';
 

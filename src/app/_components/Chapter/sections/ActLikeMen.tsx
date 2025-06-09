@@ -169,4 +169,14 @@ ActLikeMen.set('1', {
         </div>
       </>
     ),
+    conclusion: (
+      <span className="italic">
+        Dear Father in heaven,
+        <br />
+        Thank You for being so passionate about my life for Your glory even when I have been indifferent to You. Thank You for bringing me closer and closer to
+        Your heart and Your priorities. Forgive me for the times I have allowed lesser things to conflict with what matters most and lasts longest. Give me
+        wisdom as I seek today to bring greater urgency to Your agenda for my marriage and family’s future. Please continue this work in my life so that I am
+        daily being prepared for what You already know I will face in the future with Your help. In Jesus’ name, amen.
+      </span>
+    ),
   });
