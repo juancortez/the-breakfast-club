@@ -153,4 +153,20 @@ ActLikeMen.set('1', {
         </div>
       </>
     ),
+  })
+  .set('10', {
+    book: 'Snap Out Of It!',
+    identifier: 'snap-out-of-it',
+    element: (
+      <>
+        <div>
+          <Question question="In all honesty, what has been the greatest urgency of your life in each decade—or every five years—since adolescence? Jot them down." />
+          <Question question="Describe the greatest moment of urgency in your life. How did you respond? Why?" />
+        </div>
+        <div>
+          <Question question="What is it about our home life that seems to inoculate our urgency?" />
+          <Question question="What can you do today to express your passion for your family and for God’s agenda without alarming or overwhelming them?" />
+        </div>
+      </>
+    ),
   });
