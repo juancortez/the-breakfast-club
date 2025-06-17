@@ -179,4 +179,21 @@ ActLikeMen.set('1', {
         daily being prepared for what You already know I will face in the future with Your help. In Jesus’ name, amen.
       </span>
     ),
+  })
+  .set('11', {
+    book: 'Man - Do I Feel Stupid!',
+    identifier: 'man-do-i-feel-stupid',
+    element: (
+      <>
+        <div>
+          <Question question="What personal pattern of current behavior could rightly be labeled “wrong direction”?" />
+          <Question question="Where will you end up if that pattern persists unbroken?" />
+          <Question question="What blessing would flow to your life immediately if you repented of that sin and confessed it to a brother for accountability going forward?" />
+        </div>
+        <div>
+          <Question question="Why have you waited so long to make this decision?" />
+          <Question question="What prevents you now from turning to God in sincere repentance while you still can and while you still care?" />
+        </div>
+      </>
+    ),
   });
