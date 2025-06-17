@@ -183,6 +183,13 @@ ActLikeMen.set('1', {
   .set('11', {
     book: 'Man - Do I Feel Stupid!',
     identifier: 'man-do-i-feel-stupid',
+    overview: (
+      <div>
+        <i>Keep a close watch on yourself...by so doing you will save both yourself and those who hear you.</i>
+
+        <hr className="border-t border-gray-200 dark:border-gray-700 mt-4"></hr>
+      </div>
+    ),
     element: (
       <>
         <div>
