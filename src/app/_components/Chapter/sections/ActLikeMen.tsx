@@ -203,4 +203,39 @@ ActLikeMen.set('1', {
         </div>
       </>
     ),
+  })
+  .set('12', {
+    book: "You're Only Lying to Yourself",
+    identifier: 'you-are-only-lying-to-yourself',
+    overview: (
+      <div>
+        <i>Do nothing from selfish ambition or conceit, but in humility count others more significant than yourselves.</i>
+
+        <hr className="border-t border-gray-200 dark:border-gray-700 mt-4"></hr>
+      </div>
+    ),
+    element: (
+      <>
+        <div>
+          <Question question="Do you find it hard to sit under your pastor without comparing him in a negative light to someone else?" />
+          <Question question="Do you seek to be open-minded about Christians who prioritize different things about following Jesus than you do?" />
+          <Question question="How do you think your actual holiness compares to the men who lead your church? Do you think you are better or worse at modeling Christlike behavior?" />
+        </div>
+        <div>
+          <Question question="Jesus says that love for God and others is the summation of the Scriptures. In what ways are you growing in love that is apparent to those around you?" />
+          <Question question="What could you do today to encourage your pastor or another leader in your church and help them carry the heavy load of shepherding Christ’s church?" />
+        </div>
+      </>
+    ),
+    conclusion: (
+      <span className="italic">
+        God,
+        <br />
+        <br />I ask for a greater expression of humility in my interactions with others. I ask You to grow me in grace and remind me that Your “judgment is
+        without mercy to one who has shown no mercy.” Forgive me for asking others to measure up to a standard that I am not entirely fulfilling in my own
+        heart. Please alert me immediately to thoughts of superiority that reveal a higher view of myself than of others. I ask You to make me an ambassador of
+        Your mercy and lead me into loving interaction with others, which reveals my awareness that we all have a very long way to grow. Thank You for the grace
+        of the gospel that assures my forgiveness in Christ; help me to extend that same forgiveness to others. For the fame of Jesus’ name, amen.
+      </span>
+    ),
   });
