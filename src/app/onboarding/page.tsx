@@ -18,17 +18,17 @@ export default function OnboardingPage() {
         This group exists to create a safe and encouraging space for men to encounter God through friendship, Scripture, and meaningful conversation.
       </p>
 
-      <ul className="list-disc pl-6">
+      <ul className="list-disc pl-6 text-m text-gray-900 dark:text-white">
         <ul className="list-disc pl-6">
           <li>Collaboration</li>
           <ul className="list-disc pl-6">
-            <li className="text-m text-gray-900 dark:text-white">
+            <li>
               <strong>
                 Join the <AppLink href="https://groupme.com/join_group/100975787/afaATgle" content="GroupMe" />
               </strong>{' '}
               – Our main way to stay connected during the week.
             </li>
-            <li className="text-m  text-gray-900 dark:text-white">
+            <li>
               <strong>Get Added to Red Rocks - Austin</strong> - <AppLink href="sms:9152276803" content="Text" /> Juan your <i>name</i> & <i>e-mail</i> address
               to be added to the <AppLink href="https://my.redrockschurch.com/page/562?GroupId=444198" content="Red Rocks group" />.
             </li>
