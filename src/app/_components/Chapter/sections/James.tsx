@@ -572,4 +572,54 @@ JamesChapterData.set('1', {
         </div>
       </>
     ),
+  })
+  .set('10', {
+    book: 'Prayer, Confession & Restoration (James 5:13-20)',
+    identifier: 'week-10#jas.5.13-20',
+    overview: (
+      <div>
+        <h2 className="flex mb-4 text-lg font-medium text-gray-900 dark:text-white">The Place of the Passage</h2>
+
+        <p>
+          One of the main points James has been making throughout his letter has been that Christians should not just profess faith in God, but they should live
+          lives that reflect the reality of their profession. In other words, they should live in a way that underscores their declaration that God really
+          exists. James 4:13–17, as well as James 5 to this point, have been emphasizing this. In James 5:13–20 now, James continues to make that point. One of
+          the main ways we live in light of God’s reality is to pray to him. He hears prayer, and he answers it. Prayer is powerful.
+        </p>
+
+        <hr className="border-t border-gray-200 dark:border-gray-700 mt-4"></hr>
+      </div>
+    ),
+    element: (
+      <>
+        <div>
+          <Question
+            question="Read James 5:13–14. How does your response to suffering or joy reveal your trust in God, and how might prayer become a first instinct—not a last resort—for strong men in the church?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="James 5:13-14" identifier="jas.5.13-14" />
+              </>
+            )}
+          />
+          <Question
+            question="Read James 5:15–16. How can we as men cultivate the courage to confess our sins to one another and pray for each other regularly, knowing that this kind of honesty leads to healing and strength in brotherhood?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="James 5:15-16" identifier="jas.5.15-16" />
+              </>
+            )}
+          />
+        </div>
+        <div>
+          <Question
+            question="Read James 5:17–20. Elijah’s prayers were powerful, and James calls us to pray and to pursue those who wander. How can a strong man of God grow in boldness to pray with faith and take spiritual responsibility for restoring his brothers?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="James 5:17-20" identifier="jas.5.17-20" />
+              </>
+            )}
+          />
+        </div>
+      </>
+    ),
   });
