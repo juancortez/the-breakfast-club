@@ -3,6 +3,7 @@ import { DanielChapterData } from './sections/Daniel';
 import { ActLikeMen } from './sections/ActLikeMen';
 import { ManInTheMirrorData } from './sections/ManInTheMirror';
 import { JamesChapterData } from './sections/James';
+import { MarkChapterData } from './sections/Mark';
 
 export interface IChapterData {
   book: string;
@@ -13,9 +14,9 @@ export interface IChapterData {
   gradient?: string;
   conclusion?: JSX.Element;
 }
-export type ChapterTopic = 'the-book-of-daniel' | 'red-rocks-sermons' | 'act-like-men' | 'man-in-the-mirror' | 'james';
+export type ChapterTopic = 'the-book-of-daniel' | 'red-rocks-sermons' | 'act-like-men' | 'man-in-the-mirror' | 'james' | 'mark';
 
-export const TOPICS: ChapterTopic[] = ['james', 'act-like-men', 'red-rocks-sermons', 'the-book-of-daniel', 'man-in-the-mirror'] as const;
+export const TOPICS: ChapterTopic[] = ['mark', 'act-like-men', 'james', 'red-rocks-sermons', 'the-book-of-daniel', 'man-in-the-mirror'] as const;
 
 export const getChapterDataByTopic = (topic: ChapterTopic): Map<string, IChapterData> => {
   switch (topic) {
@@ -29,6 +30,8 @@ export const getChapterDataByTopic = (topic: ChapterTopic): Map<string, IChapter
       return ManInTheMirrorData;
     case 'james':
       return JamesChapterData;
+    case 'mark':
+      return MarkChapterData;
     default:
       throw new Error('Unsupported');
   }
@@ -46,5 +49,7 @@ export const topicIdentifierToReadable = (topic: ChapterTopic) => {
       return 'Man in the Mirror';
     case 'james':
       return 'The Book of James';
+    case 'mark':
+      return 'The Book of Mark';
   }
 };
