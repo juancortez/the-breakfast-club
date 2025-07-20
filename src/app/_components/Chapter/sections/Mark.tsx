@@ -44,7 +44,7 @@ MarkChapterData.set('1', {
           )}
         />
         <Question
-          question="Read Mark 1:9–11. Jesus, though sinless, was baptized to publicly affirm obedience to the Father and to identify with humanity. As a man of God, how are you publicly identifying with Christ today? In what ways is your life affirming God’s voice: “With you I am well pleased”?"
+          question="Read Mark 1:9–11. Jesus, though sinless, was baptized to publicly affirm obedience to the Father and to identify with humanity. As a man of God, how are you publicly identifying with Christ today? In what ways is your life affirming God’s voice: 'With you I am well pleased'?"
           renderReference={() => (
             <>
               <VerseTooltip verse="Mark 1:9-11" identifier="mrk.1.9-11" />
@@ -54,10 +54,45 @@ MarkChapterData.set('1', {
       </div>
       <div>
         <Question
-          question="Read Mark 1:12–13. Jesus was led by the Spirit into the wilderness to be tested and refined. When have you been “in the wilderness” and how did you respond? How does Jesus’ resistance to temptation shape your perspective on facing trials as a strong man of faith?"
+          question="Read Mark 1:12–13. Jesus was led by the Spirit into the wilderness to be tested and refined. When have you been 'in the wilderness' and how did you respond? How does Jesus’ resistance to temptation shape your perspective on facing trials as a strong man of faith?"
           renderReference={() => (
             <>
               <VerseTooltip verse="Mark 1:12-13" identifier="mrk.1.12-13" />
+            </>
+          )}
+        />
+      </div>
+    </>
+  ),
+}).set('2', {
+  book: 'Call, Commitment, & Cost (Mark 1:1-13)',
+  identifier: 'week-two#call-commitment-cost',
+  element: (
+    <>
+      <div>
+        <Question
+          question="Read Mark 1:14–15. Jesus announces that 'the time is fulfilled, and the kingdom of God is at hand; repent and believe in the gospel.' What does it mean today to live as a man who has truly repented and fully believes the gospel—even when doing so goes against culture, comfort, or personal ambition?"
+          renderReference={() => (
+            <>
+              <VerseTooltip verse="Mark 1:14-15" identifier="mrk.1.14-15" />
+            </>
+          )}
+        />
+        <Question
+          question="Read Mark 1:16–18. Jesus calls Simon and Andrew to 'Follow me, and I will make you become fishers of men,' and they immediately leave everything behind.What are the 'nets' in your life—habits, goals, or securities—you may be holding onto that are keeping you from fully following Jesus? What would it look like to drop them today?"
+          renderReference={() => (
+            <>
+              <VerseTooltip verse="Mark 1:16-18" identifier="mrk.1.16-18" />
+            </>
+          )}
+        />
+      </div>
+      <div>
+        <Question
+          question="Read Mark 1:19-20. James and John leave behind not only their work, but also their father and the family business to follow Jesus.In what ways might God be calling you to sacrifice something valuable—even relationships, status, or control—in order to step more fully into His kingdom mission? Are you willing?"
+          renderReference={() => (
+            <>
+              <VerseTooltip verse="Mark 1:19-20" identifier="mrk.1.19-20" />
             </>
           )}
         />
