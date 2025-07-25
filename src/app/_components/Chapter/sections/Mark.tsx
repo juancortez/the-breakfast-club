@@ -65,7 +65,7 @@ MarkChapterData.set('1', {
     </>
   ),
 }).set('2', {
-  book: 'Call, Commitment, & Cost (Mark 1:1-13)',
+  book: 'Call, Commitment, & Cost (Mark 1:14-20)',
   identifier: 'week-two#call-commitment-cost',
   element: (
     <>
