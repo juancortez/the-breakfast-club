@@ -238,4 +238,38 @@ ActLikeMen.set('1', {
         of the gospel that assures my forgiveness in Christ; help me to extend that same forgiveness to others. For the fame of Jesus’ name, amen.
       </span>
     ),
+  })
+  .set('13', {
+    book: 'Headed for the Ditch on a Sunny Day',
+    identifier: 'headed-for-the-ditch-on-a-sunny-day',
+    overview: (
+      <div>
+        <i>The thief comes only to steal and kill and destroy. I came that they may have life and have it abundantly</i>
+
+        <hr className="border-t border-gray-200 dark:border-gray-700 mt-4"></hr>
+      </div>
+    ),
+    element: (
+      <>
+        <div>
+          <Question question="What lies from the Enemy have you believed that are stealing your strength, identity, or purpose—and how can you expose them to God's truth today?" />
+          <Question question="Why is it crucial for strong men of God to be self-aware and spiritually alert, especially when isolation or passivity creeps in?" />
+        </div>
+        <div>
+          <Question question="Who in your life needs to hear this truth, and will you be bold enough to reach out and fight for his freedom in Christ?" />
+        </div>
+      </>
+    ),
+    conclusion: (
+      <span className="italic">
+        Dear Father,
+        <br />
+        <br />
+        Thank You for exposing my heart today to the reality of our Enemy and his schemes. I see how I can easily fall prey to believing lies about myself and
+        what is best for me and my family. Please grant me greater awareness to the angel of light and let me be alerted to his attempts to separate me from
+        brothers who can be all You desire. Give me watchful eyes and listening ears to Satan’s attack upon my family and let me apply my greatest urgency to
+        being a godly man for my family and for Your glory. Help me to walk in total dependence upon You throughout this day. In the name of Jesus Christ our
+        Savior, amen.
+      </span>
+    ),
   });
