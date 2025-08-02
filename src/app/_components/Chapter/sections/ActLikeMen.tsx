@@ -272,4 +272,38 @@ ActLikeMen.set('1', {
         Savior, amen.
       </span>
     ),
+  })
+  .set('14', {
+    book: 'Never Give Up',
+    identifier: 'never-give-up',
+    overview: (
+      <div>
+        <i>
+          I love the Lord, because he heard my voice and my pleas for mercy. Because he inclined his ear to me, therefore I will call on him as long as I live.
+        </i>
+
+        <hr className="border-t border-gray-200 dark:border-gray-700 mt-4"></hr>
+      </div>
+    ),
+    element: (
+      <>
+        <div>
+          <Question question="How does your place in your family’s spiritual legacy influence your perspective on generational obedience to Christ?" />
+          <Question question="What is the hardest thing you’ve waited on God for, and how have you persisted (or struggled) in prayer through it?" />
+        </div>
+        <div>
+          <Question question="In what ways does your life reflect God’s joy in saving the lost—and are you still actively pursuing the salvation of those you love?" />
+        </div>
+      </>
+    ),
+    conclusion: (
+      <span className="italic">
+        Dear Father,
+        <br />
+        <br />I praise You for this call upon my life to greater urgency in what matters most to You. Please draw my attention today to people You are trying to
+        reach. Please pursue me by Your grace about persisting in prayer for the salvation of those I love. Please raise generational obedience to Christ as the
+        most urgent goal of my life and give me eyes to see where work is needed toward this lofty goal. Thank You for Your promises about prayer and 106 N E V
+        E R G I V E U P salvation, and give me faith to persevere until I see this work completed. In Jesus’ wonderful name, amen.
+      </span>
+    ),
   });
