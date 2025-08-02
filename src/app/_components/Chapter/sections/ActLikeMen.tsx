@@ -302,8 +302,8 @@ ActLikeMen.set('1', {
         <br />
         <br />I praise You for this call upon my life to greater urgency in what matters most to You. Please draw my attention today to people You are trying to
         reach. Please pursue me by Your grace about persisting in prayer for the salvation of those I love. Please raise generational obedience to Christ as the
-        most urgent goal of my life and give me eyes to see where work is needed toward this lofty goal. Thank You for Your promises about prayer and 106 N E V
-        E R G I V E U P salvation, and give me faith to persevere until I see this work completed. In Jesus’ wonderful name, amen.
+        most urgent goal of my life and give me eyes to see where work is needed toward this lofty goal. Thank You for Your promises about prayer and salvation,
+        and give me faith to persevere until I see this work completed. In Jesus’ wonderful name, amen.
       </span>
     ),
   });
