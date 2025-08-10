@@ -306,4 +306,37 @@ ActLikeMen.set('1', {
         and give me faith to persevere until I see this work completed. In Jesus’ wonderful name, amen.
       </span>
     ),
+  })
+  .set('15', {
+    book: 'Jesus was Fired Up',
+    identifier: 'jesus-was-fired-up',
+    overview: (
+      <div>
+        <i>His disciples remembered that it was written, &apos;Zeal for your house will consume me.&apos;</i>
+
+        <hr className="border-t border-gray-200 dark:border-gray-700 mt-4"></hr>
+      </div>
+    ),
+    element: (
+      <>
+        <div>
+          <Question question="How does Jesus’ example of urgency and focus challenge the way you approach your mission and priorities in life?" />
+          <Question question="In what ways can passion for God’s purposes be expressed differently among believers, and how do you personally show it?" />
+        </div>
+        <div>
+          <Question question="What distractions or lesser priorities tend to steal your focus from living with the same intensity and commitment that Jesus displayed?" />
+        </div>
+      </>
+    ),
+    conclusion: (
+      <span className="italic">
+        Dear God,
+        <br />
+        <br />
+        Dear God, Thank You for sending Your Son, Jesus, who modeled for me what perfect masculinity looks like. Forgive me for the times I have spent myself
+        for what does not satisfy Your purpose in my life. Grant to me a greater focus on the urgent responsibilities You have given to me in my family and
+        service to Your kingdom. I pray for a fresh joy in serving You and an increased capacity to devote myself to the things that matter most. Thank You for
+        the work You are doing in my life through this study. For Jesus’ sake, amen.
+      </span>
+    ),
   });
