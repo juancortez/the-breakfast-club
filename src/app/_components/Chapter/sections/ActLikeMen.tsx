@@ -339,4 +339,37 @@ ActLikeMen.set('1', {
         the work You are doing in my life through this study. For Jesus’ sake, amen.
       </span>
     ),
+  })
+  .set('16', {
+    book: 'Watchful Home Improvement',
+    identifier: 'watchful-home-improvement',
+    overview: (
+      <div>
+        <i>The fear of the Lord is the beginning of wisdom</i>
+
+        <hr className="border-t border-gray-200 dark:border-gray-700 mt-4"></hr>
+      </div>
+    ),
+    element: (
+      <>
+        <div>
+          <Question question="How does your current approach to discipline reflect (or differ from) the way you were raised, and how can you ensure it aligns with God’s model of fatherhood?" />
+          <Question question="Which of the four discipline tools (rod, reproof, loss of freedom, responsibilities) do you find most relevant for your children’s stage of growth, and how can you apply them with both firmness and love?" />
+        </div>
+        <div>
+          <Question question="In what ways can you model humility and dependence on God in your parenting so that your children see the fear of the Lord shaping your home?" />
+        </div>
+      </>
+    ),
+    conclusion: (
+      <span className="italic">
+        My Father in Heaven,
+        <br />
+        <br />
+        Because Your name is holy, I want to acknowledge first how unworthy I am to even accept the title of father in my children’s lives. I recognize that I
+        fall painfully short of showing Your character to them. But I long to point them to You. Please keep me from doing or saying anything that would become
+        a barrier between my children and You. But even more, please help me to be a dad who trains, guides, and loves my kids as You do. Teach me to reflect
+        the same hard and soft combination of authentic love toward them that I am continually discovering in my relationship with You. In Jesus’ name, amen.
+      </span>
+    ),
   });
