@@ -56,7 +56,9 @@ export default function BingoPage() {
         </div>
       </header>
       <div className="mb-2">
-        <p className="text-gray-500 dark:text-gray-400 font-small">Write down 5 words that resonate most with who you are or who you want to be.</p>
+        <p className="text-gray-500 dark:text-gray-400 font-small">
+          Click on 5 words that resonate most with who you are or who you want to be. Transfer them to the index card.
+        </p>
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-4 justify-center gap-4" onClick={onClick}>
