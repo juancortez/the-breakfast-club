@@ -64,39 +64,76 @@ MarkChapterData.set('1', {
       </div>
     </>
   ),
-}).set('2', {
-  book: 'Call, Commitment, & Cost (Mark 1:14-20)',
-  identifier: 'week-two#call-commitment-cost',
-  element: (
-    <>
-      <div>
-        <Question
-          question="Read Mark 1:14–15. Jesus announces that 'the time is fulfilled, and the kingdom of God is at hand; repent and believe in the gospel.' What does it mean today to live as a man who has truly repented and fully believes the gospel—even when doing so goes against culture, comfort, or personal ambition?"
-          renderReference={() => (
-            <>
-              <VerseTooltip verse="Mark 1:14-15" identifier="mrk.1.14-15" />
-            </>
-          )}
-        />
-        <Question
-          question="Read Mark 1:16–18. Jesus calls Simon and Andrew to 'Follow me, and I will make you become fishers of men,' and they immediately leave everything behind.What are the 'nets' in your life—habits, goals, or securities—you may be holding onto that are keeping you from fully following Jesus? What would it look like to drop them today?"
-          renderReference={() => (
-            <>
-              <VerseTooltip verse="Mark 1:16-18" identifier="mrk.1.16-18" />
-            </>
-          )}
-        />
-      </div>
-      <div>
-        <Question
-          question="Read Mark 1:19-20. James and John leave behind not only their work, but also their father and the family business to follow Jesus.In what ways might God be calling you to sacrifice something valuable—even relationships, status, or control—in order to step more fully into His kingdom mission? Are you willing?"
-          renderReference={() => (
-            <>
-              <VerseTooltip verse="Mark 1:19-20" identifier="mrk.1.19-20" />
-            </>
-          )}
-        />
-      </div>
-    </>
-  ),
-});
+})
+  .set('2', {
+    book: 'Call, Commitment, & Cost (Mark 1:14-20)',
+    identifier: 'week-two#call-commitment-cost',
+    element: (
+      <>
+        <div>
+          <Question
+            question="Read Mark 1:14–15. Jesus announces that 'the time is fulfilled, and the kingdom of God is at hand; repent and believe in the gospel.' What does it mean today to live as a man who has truly repented and fully believes the gospel—even when doing so goes against culture, comfort, or personal ambition?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="Mark 1:14-15" identifier="mrk.1.14-15" />
+              </>
+            )}
+          />
+          <Question
+            question="Read Mark 1:16–18. Jesus calls Simon and Andrew to 'Follow me, and I will make you become fishers of men,' and they immediately leave everything behind.What are the 'nets' in your life—habits, goals, or securities—you may be holding onto that are keeping you from fully following Jesus? What would it look like to drop them today?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="Mark 1:16-18" identifier="mrk.1.16-18" />
+              </>
+            )}
+          />
+        </div>
+        <div>
+          <Question
+            question="Read Mark 1:19-20. James and John leave behind not only their work, but also their father and the family business to follow Jesus.In what ways might God be calling you to sacrifice something valuable—even relationships, status, or control—in order to step more fully into His kingdom mission? Are you willing?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="Mark 1:19-20" identifier="mrk.1.19-20" />
+              </>
+            )}
+          />
+        </div>
+      </>
+    ),
+  })
+  .set('3', {
+    book: 'Authority, Power, & Freedom (Mark 1:21-28)',
+    identifier: 'week-three#authorith-power-freedom',
+    element: (
+      <>
+        <div>
+          <Question
+            question="Read Mark 1:22. Jesus taught with authority, unlike the scribes. In what areas of your life do you need to step up and lead with godly authority — in your home, church, or community?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="Mark 1:22" identifier="mrk.1.22" />
+              </>
+            )}
+          />
+          <Question
+            question="Read Mark 1:25–26. Jesus confronted the unclean spirit directly and cast it out. What does spiritual warfare look like in your own walk, and how have you seen God strengthen you through it?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="Mark 1:25-26" identifier="mrk.1.25-26" />
+              </>
+            )}
+          />
+        </div>
+        <div>
+          <Question
+            question="Read Mark 1:27–28. The people were amazed at Jesus’ authority, and His fame spread. How can strong men of God reflect Jesus’ authority through our actions and character so that others see Christ in us?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="Mark 1:27-28" identifier="mrk.1.27-28" />
+              </>
+            )}
+          />
+        </div>
+      </>
+    ),
+  });
