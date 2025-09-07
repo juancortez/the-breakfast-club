@@ -103,7 +103,7 @@ MarkChapterData.set('1', {
   })
   .set('3', {
     book: 'Authority, Power, & Freedom (Mark 1:21-28)',
-    identifier: 'week-three#authorith-power-freedom',
+    identifier: 'week-three#authority-power-freedom',
     element: (
       <>
         <div>
@@ -133,6 +133,35 @@ MarkChapterData.set('1', {
               </>
             )}
           />
+        </div>
+      </>
+    ),
+  })
+  .set('4', {
+    book: 'Healing, Boldness & Celebration (Mark 1:29-34)',
+    identifier: 'week-four#healing-boldness-celebration',
+    element: (
+      <>
+        <div>
+          <Question
+            question="Read Mark 1:29–31. Jesus’ healing led to immediate service. How can we as a rowdy church stay salty by serving others in a way that brings out God’s flavor in the world?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="Mark 1:29-31" identifier="mrk.1.29-31" />
+              </>
+            )}
+          />
+          <Question
+            question="Read Mark 1:32–34. The whole city crowded the door to see Jesus. What’s one way you personally can draw others closer to Him through your life and influence?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="Mark 1:32-34" identifier="mrk.1.23-34" />
+              </>
+            )}
+          />
+        </div>
+        <div>
+          <Question question="In this section of Mark, Jesus turned sickness and oppression into joy and freedom. How can our church feel like a party and smell like a sweet fragrance so others experience the life and celebration of Jesus?" />
         </div>
       </>
     ),
