@@ -165,4 +165,27 @@ MarkChapterData.set('1', {
         </div>
       </>
     ),
+  })
+  .set('5', {
+    book: 'Recruitment, Commitment, Preparation (Mark 1:35-45)',
+    identifier: 'week-five#recruitment-commitment-preparation',
+    element: (
+      <>
+        <div>
+          <Question
+            question="Read Mark 1:35-45. How does Jesus's early morning prayer time in Mark 1:35 demonstrate his dependence on God, and how does this contrast with his disciples' expectations that he would stay and minister to the crowds?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="Mark 1:235-45" identifier="mrk.1.35-45" />
+              </>
+            )}
+          />
+          <Question question="How does Jesus's display of compassion to this 'hopeless outcast' challenge our own tendencies toward exclusion and isolation?" />
+        </div>
+        <div>
+          <Question question="What was the consequence of the leper's decision to disobey Jesus's instructions, and what does this teach us about obedience?" />
+          <Question question="How can we apply Jesus's example of engaging with outcasts in our own communities, and who is God calling you to reach with gospel compassion?" />
+        </div>
+      </>
+    ),
   });
