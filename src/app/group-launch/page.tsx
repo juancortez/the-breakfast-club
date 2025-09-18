@@ -5,6 +5,10 @@ function onContactUs() {
   return `sms://${PHONE_NUMBER};?&body=${encodeURIComponent(CONTACT_BODY)}`;
 }
 
+export const metadata = {
+  title: 'The Breakfast Club | Group Launch',
+};
+
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 flex flex-col items-center justify-between relative">
