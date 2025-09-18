@@ -87,7 +87,7 @@ export const TranslationSelector = () => {
   );
 
   return (
-    <Gear onClose={onClose} showChildren={!!translation && path !== '/'}>
+    <Gear onClose={onClose} showChildren={!!translation && path.includes('/topic')}>
       <div className="relative inline-block text-left dropdown">
         <span className="rounded-md shadow-sm">
           <button

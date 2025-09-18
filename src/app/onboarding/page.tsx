@@ -2,7 +2,7 @@ import { AppLink } from '../_components/AppLink';
 import { HomeButton } from '../_components/HomeNavButton';
 
 const CURRENT_STUDY = {
-  bible: 'James',
+  bible: 'Mark',
   selfDevelopment: {
     link: 'https://drive.google.com/file/u/0/d/1-TtAEzX4wdB3kk25LrA77nr0Z4_HCkof/view',
     name: 'Act Like Men',
