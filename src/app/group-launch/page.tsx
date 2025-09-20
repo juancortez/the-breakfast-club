@@ -1,7 +1,10 @@
 const PHONE_NUMBER = '9152276803';
 const CONTACT_BODY = "Hi Juan, I'm interested in joining the Breakfast Club!";
 
-function onContactUs() {
+function onContactUs(variant: 'phone' | 'link' = 'link') {
+  if (variant === 'link') {
+    return 'https://my.redrockschurch.com/SmallGroupRegister?GroupGuid=c79eafc7-5b65-43ac-8e97-c35ca6d79b28';
+  }
   return `sms://${PHONE_NUMBER};?&body=${encodeURIComponent(CONTACT_BODY)}`;
 }
 
