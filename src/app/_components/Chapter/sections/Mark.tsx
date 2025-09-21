@@ -176,7 +176,7 @@ MarkChapterData.set('1', {
             question="Read Mark 1:35-45. How does Jesus's early morning prayer time in Mark 1:35 demonstrate his dependence on God, and how does this contrast with his disciples' expectations that he would stay and minister to the crowds?"
             renderReference={() => (
               <>
-                <VerseTooltip verse="Mark 1:235-45" identifier="mrk.1.35-45" />
+                <VerseTooltip verse="Mark 1:35-45" identifier="mrk.1.35-45" />
               </>
             )}
           />
@@ -185,6 +185,42 @@ MarkChapterData.set('1', {
         <div>
           <Question question="What was the consequence of the leper's decision to disobey Jesus's instructions, and what does this teach us about obedience?" />
           <Question question="How can we apply Jesus's example of engaging with outcasts in our own communities, and who is God calling you to reach with gospel compassion?" />
+        </div>
+      </>
+    ),
+  })
+  .set('6', {
+    book: 'Faith, Authority, Forgiveness (Mark 2:1-12)',
+    identifier: 'week-six#faith-authority-forgiveness',
+    element: (
+      <>
+        <div>
+          <Question
+            question="Read Mark 2:1–5. The house was packed, the moment was tense, and everyone had their eyes on Jesus. Yet instead of healing the paralytic first, Jesus forgave his sins—shifting the focus from the physical to the spiritual. As men, where in your life are you more focused on external success, comfort, or appearance, when Jesus is actually trying to address a deeper spiritual need?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="Mark 1:2:1-5" identifier="mrk.2.1-5" />
+              </>
+            )}
+          />
+          <Question
+            question="Read Mark 2:6–9. The teachers of the law silently doubted Jesus’ authority to forgive sins, but He exposed their hearts. Like Peter in Matthew 14, who sank when his attention drifted from Jesus, we often let fear or skepticism pull us away. In what areas of your life are you questioning Jesus’ authority—in your work, your family, or your personal struggles—and how can you fix your eyes back on Him?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="Mark 2:6-9" identifier="mrk.2.6-9" />
+              </>
+            )}
+          />
+        </div>
+        <div>
+          <Question
+            question="Read Mark 2:10–12. Jesus proved His authority by both forgiving sins and healing the paralytic, leaving the crowd amazed and glorifying God. When you see Jesus at work in your life, do you consistently respond with worship and obedience, or do you let amazement fade into forgetfulness? What practical steps can you take this week to glorify God publicly as a man under Christ’s authority?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="Mark 2:10-12" identifier="mrk.2.10-12" />
+              </>
+            )}
+          />
         </div>
       </>
     ),

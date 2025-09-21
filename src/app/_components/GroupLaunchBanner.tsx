@@ -3,9 +3,15 @@
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 
+const IS_GROUP_LAUNCH_LIVE = false;
+
 export default function GroupLaunchBanner() {
   const [isVisible, setIsVisible] = useState(true);
   const path = usePathname();
+
+  if (!IS_GROUP_LAUNCH_LIVE) {
+    return null;
+  }
 
   if (path !== '/') {
     return false;
