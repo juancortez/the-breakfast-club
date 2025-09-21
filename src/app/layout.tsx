@@ -4,6 +4,7 @@ import './globals.css';
 import Link from 'next/link';
 import { ClientProvider } from './_context/ClientContext';
 import { TranslationSelector } from './_components/TranslationSelector';
+import GroupLaunchBanner from './_components/GroupLaunchBanner';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -32,6 +33,8 @@ export default function RootLayout({
                   </h1>
                   <TranslationSelector />
                 </div>
+
+                <GroupLaunchBanner />
 
                 <div className="pt-2">{children}</div>
               </div>
