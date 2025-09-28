@@ -199,7 +199,7 @@ MarkChapterData.set('1', {
             question="Read Mark 2:1–5. The house was packed, the moment was tense, and everyone had their eyes on Jesus. Yet instead of healing the paralytic first, Jesus forgave his sins—shifting the focus from the physical to the spiritual. As men, where in your life are you more focused on external success, comfort, or appearance, when Jesus is actually trying to address a deeper spiritual need?"
             renderReference={() => (
               <>
-                <VerseTooltip verse="Mark 1:2:1-5" identifier="mrk.2.1-5" />
+                <VerseTooltip verse="Mark 2:1-5" identifier="mrk.2.1-5" />
               </>
             )}
           />
@@ -218,6 +218,42 @@ MarkChapterData.set('1', {
             renderReference={() => (
               <>
                 <VerseTooltip verse="Mark 2:10-12" identifier="mrk.2.10-12" />
+              </>
+            )}
+          />
+        </div>
+      </>
+    ),
+  })
+  .set('7', {
+    book: 'Invitation, Joy, Renewal (Mark 2:13-22)',
+    identifier: 'week-seven#invitation-joy-renewal',
+    element: (
+      <>
+        <div>
+          <Question
+            question="Read Mark 2:13–17. Jesus calls Levi and shares a meal with tax collectors and sinners. What does this reveal about God’s heart for people, and how can our worshipful response to Jesus shape the way we treat those others might avoid?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="Mark 2:13-17" identifier="mrk.2.13-17" />
+              </>
+            )}
+          />
+          <Question
+            question="Read Mark 2:18–20. Jesus calls Himself the Bridegroom and explains why His disciples don’t fast while He is with them. What does this picture of a wedding celebration teach us about the joy and freedom that come with following Jesus—and how might we reflect that joy in our daily lives?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="Mark 2:18-20" identifier="mrk.2.18-20" />
+              </>
+            )}
+          />
+        </div>
+        <div>
+          <Question
+            question="Read Mark 2:21–22. Jesus teaches that new wine needs new wineskins. What “old wineskins” might need to be surrendered in your life, and how could practicing worship in fresh ways make space for His new work in you and in our church?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="Mark 2:12-22" identifier="mrk.2.21-22" />
               </>
             )}
           />
