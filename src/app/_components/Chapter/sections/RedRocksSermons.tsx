@@ -132,8 +132,8 @@ RedRocksSermons.set('1', {
     ),
   })
   .set('4', {
-    book: 'Get Ready to Change the World',
-    identifier: 'ready-to-change-world',
+    book: 'Face The Flames',
+    identifier: 'face-the-flames',
     overview: (
       <p>
         Discussion questions for <AppLink href="https://www.youtube.com/watch?v=Ild8OHxbrfM" content="Face The Flames | Ethan Matott" /> sermon from October 5,
