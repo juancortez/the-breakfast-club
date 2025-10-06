@@ -1,5 +1,5 @@
 type QuestionProps = {
-  question: string;
+  question: string | React.ReactElement;
   renderReference?: () => JSX.Element;
   FollowUp?: JSX.Element;
 };

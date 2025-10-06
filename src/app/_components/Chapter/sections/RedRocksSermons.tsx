@@ -130,4 +130,46 @@ RedRocksSermons.set('1', {
         </div>
       </>
     ),
+  })
+  .set('4', {
+    book: 'Get Ready to Change the World',
+    identifier: 'ready-to-change-world',
+    overview: (
+      <p>
+        Discussion questions for <AppLink href="https://www.youtube.com/watch?v=Ild8OHxbrfM" content="Face The Flames | Ethan Matott" /> sermon from October 5,
+        2025.
+      </p>
+    ),
+    element: (
+      <>
+        <div>
+          <Question
+            question={
+              <span>
+                <strong>Facing The Fire</strong>: What “fire” in your life right now feels hardest to face—and what do you think God might want to show you in
+                it rather than after it?
+              </span>
+            }
+          />
+          <Question
+            question={
+              <span>
+                <strong>Reaching for Jesus</strong>: When the heat rises, what does it look like for you to “reach for Jesus” instead of numbing out or
+                avoiding? What small, honest step could help you start this week?
+              </span>
+            }
+          />
+        </div>
+        <div>
+          <Question
+            question={
+              <span>
+                <strong>Refining Through the Flames</strong>: How might the fire you’re walking through today become a story that strengthens someone else
+                tomorrow?
+              </span>
+            }
+          />
+        </div>
+      </>
+    ),
   });
