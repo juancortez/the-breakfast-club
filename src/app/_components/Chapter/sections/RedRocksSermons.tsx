@@ -135,10 +135,33 @@ RedRocksSermons.set('1', {
     book: 'Face The Flames',
     identifier: 'face-the-flames',
     overview: (
-      <p>
-        Discussion questions for <AppLink href="https://www.youtube.com/watch?v=Ild8OHxbrfM" content="Face The Flames | Ethan Matott" /> sermon from October 5,
-        2025.
-      </p>
+      <div>
+        <p>
+          Discussion questions for <AppLink href="https://www.youtube.com/watch?v=Ild8OHxbrfM" content="Face The Flames | Ethan Matott" /> sermon from October
+          5, 2025.
+        </p>
+        <div className="flex items-center justify-center my-6">
+          <div className="w-full max-w-3xl mx-auto">
+            <iframe
+              src="https://www.youtube.com/embed/Ild8OHxbrfM?si=ImFI2ibvjmWQccw2"
+              width="300"
+              height="400"
+              className="block sm:hidden rounded-lg"
+              loading="lazy"
+              allowFullScreen
+            ></iframe>
+
+            <iframe
+              src="https://www.youtube.com/embed/Ild8OHxbrfM?si=ImFI2ibvjmWQccw2"
+              width="600"
+              height="450"
+              className="hidden sm:block rounded-lg"
+              loading="lazy"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
     ),
     element: (
       <>
