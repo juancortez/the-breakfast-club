@@ -4,12 +4,15 @@ import React, { useMemo } from 'react';
 
 interface NavSectionBlockProps {
   name: string;
+  topic: string;
   children: JSX.Element;
 }
-const NavSectionBlock = ({ name, children }: NavSectionBlockProps) => (
+const NavSectionBlock = ({ name, topic, children }: NavSectionBlockProps) => (
   <>
     <li>
-      <a className="block py-1 font-medium font-medium text-sky-500 dark:text-sky-400">{name}</a>
+      <a className="block py-1 font-medium font-medium text-sky-500 dark:text-sky-400" href={`/topic/${topic}`}>
+        {name}
+      </a>
     </li>
     {children}
   </>
@@ -42,13 +45,13 @@ const NavLink = ({ chapter, content, topic }: LinkProps) => {
   );
 };
 
-export const HomeTopicNavSection = () => {
+export const HomeTopicNavSection = ({ filteredTopics = TOPICS }: { filteredTopics?: ChapterTopic[] }) => {
   const topics = useMemo(
     () =>
-      TOPICS.map((t) => {
+      filteredTopics.map((t) => {
         const readableTopic = topicIdentifierToReadable(t);
         return (
-          <NavSectionBlock key={t} name={readableTopic}>
+          <NavSectionBlock key={t} name={readableTopic} topic={t}>
             <>
               {Array.from(getChapterDataByTopic(t)).map(([, value]) => (
                 <NavLink topic={t} key={value.identifier} chapter={value.identifier} content={value.book} />
@@ -57,7 +60,7 @@ export const HomeTopicNavSection = () => {
           </NavSectionBlock>
         );
       }),
-    []
+    [filteredTopics]
   );
 
   return <div>{topics}</div>;
