@@ -16,7 +16,7 @@ export interface IChapterData {
 }
 export type ChapterTopic = 'the-book-of-daniel' | 'red-rocks-sermons' | 'act-like-men' | 'man-in-the-mirror' | 'james' | 'mark';
 
-export const TOPICS: ChapterTopic[] = ['mark', 'act-like-men', 'james', 'red-rocks-sermons', 'the-book-of-daniel', 'man-in-the-mirror'] as const;
+export const TOPICS: ChapterTopic[] = ['act-like-men', 'mark', 'red-rocks-sermons', 'james', 'the-book-of-daniel', 'man-in-the-mirror'] as const;
 
 export const getChapterDataByTopic = (topic: ChapterTopic): Map<string, IChapterData> => {
   switch (topic) {

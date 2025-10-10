@@ -24,8 +24,9 @@ export function Chapter({ book, topic, overview, gradient = 'bg-gradient-to-r to
 
       {conclusion && <blockquote className="text-gray-900 dark:text-white mb-4">{conclusion}</blockquote>}
 
-      <section className="flex justify-center items-center mt-4 sticky top-[90vh]">
+      <section className="flex justify-center items-center mt-4 sticky top-[90vh] gap-4">
         <HomeButton />
+        <HomeButton variant="series-home" />
       </section>
     </article>
   );
