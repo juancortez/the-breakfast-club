@@ -400,9 +400,9 @@ ActLikeMen.set('1', {
         <br />
         <br />I admit I am sometimes intimidated by Your Word. But I want to be among those who stand for it and base their lives on it. Help me not to use my
         lack of knowledge as an excuse for failing to pursue more. Keep me from confidence in what I know but increasing confidence in what You have said in
-        Scripture. Remind me that it remains true even when I don't yet understand it. Draw me by Your Spirit into continued faithful study of Your Word that I
-        may be able to not only stand firm, but also share with my family how the Bible is making a difference in my life. Guide me into the truth. In Jesus'
-        name, the Way, the Truth, the Life, I pray, amen.
+        Scripture. Remind me that it remains true even when I don&apos;t yet understand it. Draw me by Your Spirit into continued faithful study of Your Word
+        that I may be able to not only stand firm, but also share with my family how the Bible is making a difference in my life. Guide me into the truth. In
+        Jesus&apos; name, the Way, the Truth, the Life, I pray, amen.
       </span>
     ),
   });
