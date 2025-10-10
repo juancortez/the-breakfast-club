@@ -372,4 +372,37 @@ ActLikeMen.set('1', {
         the same hard and soft combination of authentic love toward them that I am continually discovering in my relationship with You. In Jesus’ name, amen.
       </span>
     ),
+  })
+  .set('17', {
+    book: 'Urgently Unclear',
+    identifier: 'urgently-unclear',
+    overview: (
+      <div>
+        <i>Stand firm in the faith</i>
+
+        <hr className="border-t border-gray-200 dark:border-gray-700 mt-4"></hr>
+      </div>
+    ),
+    element: (
+      <>
+        <div>
+          <Question question="If you had to explain the faith to a friend or to one of your children, how would you begin, and what would you include?" />
+          <Question question="When you think of the faith as you understand it at this point, what do you find difficult to stand for?" />
+        </div>
+        <div>
+          <Question question="What does standing firm look like in your life right now and where could God and other men help you improve?" />
+        </div>
+      </>
+    ),
+    conclusion: (
+      <span className="italic">
+        O Father in Heaven,
+        <br />
+        <br />I admit I am sometimes intimidated by Your Word. But I want to be among those who stand for it and base their lives on it. Help me not to use my
+        lack of knowledge as an excuse for failing to pursue more. Keep me from confidence in what I know but increasing confidence in what You have said in
+        Scripture. Remind me that it remains true even when I don't yet understand it. Draw me by Your Spirit into continued faithful study of Your Word that I
+        may be able to not only stand firm, but also share with my family how the Bible is making a difference in my life. Guide me into the truth. In Jesus'
+        name, the Way, the Truth, the Life, I pray, amen.
+      </span>
+    ),
   });
