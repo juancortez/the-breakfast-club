@@ -405,4 +405,62 @@ ActLikeMen.set('1', {
         Jesus&apos; name, the Way, the Truth, the Life, I pray, amen.
       </span>
     ),
+  })
+  .set('18', {
+    book: 'A Craving for Clarity',
+    identifier: 'a-craving-for-clarity',
+    overview: (
+      <div>
+        <i>
+          Your words were found, and I ate them, and your words became to me a joy and the delight of my heart, for I am called by your name, O Lord, God of
+          hosts.
+        </i>
+
+        <hr className="border-t border-gray-200 dark:border-gray-700 mt-4"></hr>
+      </div>
+    ),
+    element: (
+      <>
+        <div>
+          <Question question="What are three locations/relationships where you realize you must intentionally stand firm in the faith? How is that going?" />
+          <Question
+            question="In what areas (start with the five gospel words) do you sense the need for greater clarity? Where and how are you going to get it?"
+            FollowUp={
+              <div>
+                <ul className="list-none">
+                  <li>
+                    <strong>God</strong> - summary term for the Trinity
+                  </li>
+                  <li>
+                    <strong>Sin</strong> - universal condition of separation from God
+                  </li>
+                  <li>
+                    <strong>Substitution</strong> - what God did in Christ and His cross to rescue us from sin
+                  </li>
+                  <li>
+                    <strong>Belief</strong> - placing our whole trust in Christ alone for forgivenesss and eternal life
+                  </li>
+                  <li>
+                    <strong>Life</strong> - the present and future promise God gives to those who place their faith in His Son
+                  </li>
+                </ul>
+              </div>
+            }
+          />
+        </div>
+        <div>
+          <Question question="Who are your role models for standing firm in the faith? How are you organizing your life to spend time with those men?" />
+        </div>
+      </>
+    ),
+    conclusion: (
+      <span className="italic">
+        Father,
+        <br />
+        <br />
+        Thank You for showing me the connection between the five gospel words and the way each applies to me. Keep reminding me that standing firm isn&apos;t
+        about my strength but Your power at work with me. Guide me as a I seek to be clear on what You want me to undertand and pass on to my family. I want to
+        be a good example of trusing You even as I teach my children to trust You. In Jesus&apos; name I pray, amen.
+      </span>
+    ),
   });
