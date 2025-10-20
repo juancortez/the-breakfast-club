@@ -1,7 +1,7 @@
 const PHONE_NUMBER = '9152276803';
 const CONTACT_BODY = "Hi Juan, I'm interested in joining the Breakfast Club!";
 
-function onContactUs(variant: 'phone' | 'link' = 'link') {
+function onContactUs(variant: 'phone' | 'link' = 'phone') {
   if (variant === 'link') {
     return 'https://my.redrockschurch.com/SmallGroupRegister?GroupGuid=c79eafc7-5b65-43ac-8e97-c35ca6d79b28';
   }
@@ -106,7 +106,7 @@ export default function LandingPage() {
           discover the strength of brotherhood.
         </p>
         <a
-          href={onContactUs()}
+          href={onContactUs('phone')}
           className="px-6 py-3 text-lg font-semibold rounded-2xl bg-gradient-to-r from-purple-600 to-indigo-600 text-white shadow-lg hover:opacity-90"
         >
           Join the Journey
