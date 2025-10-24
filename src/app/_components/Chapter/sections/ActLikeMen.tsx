@@ -463,4 +463,36 @@ ActLikeMen.set('1', {
         be a good example of trusing You even as I teach my children to trust You. In Jesus&apos; name I pray, amen.
       </span>
     ),
+  })
+  .set('19', {
+    book: 'Clarity in Crisis',
+    identifier: 'clarity-in-crisis',
+    overview: (
+      <div>
+        <i>The end of the matter; all has been heard. Fear God and keep his commandments, for this is the whole duty of man.</i>
+
+        <hr className="border-t border-gray-200 dark:border-gray-700 mt-4"></hr>
+      </div>
+    ),
+    element: (
+      <>
+        <div>
+          <Question question="Do you agree with Soloman's assessment that life, though beautiful, is ultimately futile without an eternal purpose? Why or why not?" />
+          <Question question="To what degree do you find yourself aiming at certain temporal things you hope will bring life special meaning? How is that going?" />
+        </div>
+        <div>
+          <Question question="In what ways is Jesus Christ at the center of all you do? How does He bring clarity to your priorities?" />
+        </div>
+      </>
+    ),
+    conclusion: (
+      <span className="italic">
+        Lord,
+        <br />
+        <br />
+        Thank You for making the world such a beautiful, challenging, even dangerous place. But thank You for also warning me that I was designed to live in
+        this world in fellowship with You. Teach me to enjoy this life fully as a gift and temporary experience without ever expecting it to meet my hunger for
+        eternity and for You. Teach me what it means to make You and Your glory the first priority in every aspect of my life. In Jesus&apos; name I pray, amen.
+      </span>
+    ),
   });
