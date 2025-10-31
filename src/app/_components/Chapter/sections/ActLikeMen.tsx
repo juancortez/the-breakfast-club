@@ -495,4 +495,39 @@ ActLikeMen.set('1', {
         eternity and for You. Teach me what it means to make You and Your glory the first priority in every aspect of my life. In Jesus&apos; name I pray, amen.
       </span>
     ),
+  })
+  .set('20', {
+    book: 'Pauls Clarity',
+    identifier: 'pauls-clarity',
+    overview: (
+      <div>
+        <i>
+          Brothers, I do not consider that I have made it my own. But one thing I do: forgetting what lies behind and straining forward to what lies ahead, I
+          press on towards the goal for the prize of the upward call of God in Christ Jesus.
+        </i>
+
+        <hr className="border-t border-gray-200 dark:border-gray-700 mt-4"></hr>
+      </div>
+    ),
+    element: (
+      <>
+        <div>
+          <Question question="What crisis has God allowed in your life at this time?" />
+          <Question question="What issues is He giving you clarity about that you have struggled to see?" />
+          <Question question="What action would God want you to take based on the clarity He is giving?" />
+        </div>
+        <div>
+          <Question question="How does that action reflect a 'standing firm in the faith'" />
+          <Question question="Will you commit to talking to a brother in Christ today about your clarity and intended action, asking him to pray and support your decision?" />
+        </div>
+      </>
+    ),
+    conclusion: (
+      <span className="italic">
+        Thank You, Father, for Your sovereignty in all things. Your Word is true when it asserts that no trial is joyful for the moment. Thank You, though, that
+        &quot;later it yields the peaceful fruit of righteousness to those who have been trained by it.&quot; I praise You for using this crisis in my life to
+        bring me clarity on a needed action. Please grant me the needed courage to follow through on this clarity today. In advanced and by faith, I praise You
+        for what You are doing in my life. In Jesus great name, amen.
+      </span>
+    ),
   });
