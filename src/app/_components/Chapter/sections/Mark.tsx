@@ -260,4 +260,41 @@ MarkChapterData.set('1', {
         </div>
       </>
     ),
+  })
+  .set('8', {
+    book: 'Lordship, Compassion, Response. (Mark 2:23-3:12)',
+    identifier: 'week-eight#lordship-compassion-response',
+    element: (
+      <>
+        <div>
+          <Question
+            question="Read Mark 2:23–28. What does “the Sabbath was made for man” show about God’s heart behind His commands?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="Mark 2:23–28" identifier="mrk.2.23-28" />
+              </>
+            )}
+          />
+          <Question
+            question="Read Mark 3:1–6. What does Jesus’ healing on the Sabbath teach about choosing compassion over comfort?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="Mark 3:1-6" identifier="mrk.3.1-6" />
+              </>
+            )}
+          />
+        </div>
+        <div>
+          <Question
+            question="Read Mark 3:7–12. What causes some to harden toward Jesus and others to draw near to Him in life’s fires?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="Mark 3:7-12" identifier="mrk.3.7-12" />
+              </>
+            )}
+          />
+          <Question question="If Jesus is Lord of today, what would it look like to obey Him in one specific area of your life right now, instead of waiting for a “better time”?" />
+        </div>
+      </>
+    ),
   });
