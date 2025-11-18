@@ -262,7 +262,7 @@ MarkChapterData.set('1', {
     ),
   })
   .set('8', {
-    book: 'Lordship, Compassion, Response. (Mark 2:23-3:12)',
+    book: 'Lordship, Compassion, Response (Mark 2:23-3:12)',
     identifier: 'week-eight#lordship-compassion-response',
     element: (
       <>
@@ -294,6 +294,27 @@ MarkChapterData.set('1', {
             )}
           />
           <Question question="If Jesus is Lord of today, what would it look like to obey Him in one specific area of your life right now, instead of waiting for a “better time”?" />
+        </div>
+      </>
+    ),
+  })
+  .set('9', {
+    book: 'Authority, Allegiance, Identity (Mark 3:13-3:35)',
+    identifier: 'week-nine#authority-allegiance-identity',
+    overview: (
+      <div>
+        The following questions draw from <VerseTooltip verse="Mark 3:13-3:35" identifier="mrk.3.13-35" inline />, a passage filled with challenge, clarity, and
+        calling.
+      </div>
+    ),
+    element: (
+      <>
+        <div>
+          <Question question='What does Jesus mean by "blasphemy against the Holy Spirit," and why is it called unforgivable? How does the concept of "blasphemy against the Holy Spirit" apply to us today?' />
+          <Question question='Why do Jesus own relatives think he is "out of his mind"? What does their attempt to seize him reveal about the challenge of following Gods will even when it is misunderstood by those closest to us?' />
+        </div>
+        <div>
+          <Question question="How do we become part of Jesus's spiritual family? How should this teaching affect our relationships with our biological families while we also serve God?" />
         </div>
       </>
     ),
