@@ -318,4 +318,41 @@ MarkChapterData.set('1', {
         </div>
       </>
     ),
+  })
+  .set('10', {
+    book: 'Hear, Receive, Grow (Mark 4:1-20)',
+    identifier: 'week-ten#hear-receive-grow',
+    element: (
+      <>
+        <div>
+          <Question
+            question="Read Mark 4:1–9. What does Jesus’ picture of the four soils reveal about the different ways we receive God’s word, and which “soil condition” do you see showing up in your life right now?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="Mark 4:1-9" identifier="mrk.4.1-9" />
+              </>
+            )}
+          />
+          <Question
+            question="Read Mark 4:10–12. How does Jesus’ explanation of why He teaches in parables challenge the way you think about hearing, understanding, and actually obeying what God asks of you?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="Mark 4:10-12" identifier="mrk.4.10-12" />
+              </>
+            )}
+          />
+        </div>
+        <div>
+          <Question
+            question="Read Mark 4:13–20. What does Jesus’ description of “bearing fruit”—thirty, sixty, or a hundredfold—teach us about living with open hands, planting generously, and trusting God to grow what we release?"
+            renderReference={() => (
+              <>
+                <VerseTooltip verse="Mark 4:13-20" identifier="mrk.4.13-20" />
+              </>
+            )}
+          />
+          <Question question="What part of your life needs tending today so God’s word can actually take root?" />
+        </div>
+      </>
+    ),
   });
