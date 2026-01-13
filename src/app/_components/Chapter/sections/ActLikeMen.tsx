@@ -1,4 +1,5 @@
 import { Question } from '../../Question';
+import { VerseTooltip } from '../../VerseTooltip';
 import { IChapterData } from '../data';
 
 export const ActLikeMen = new Map<string, IChapterData>();
@@ -528,6 +529,35 @@ ActLikeMen.set('1', {
         &quot;later it yields the peaceful fruit of righteousness to those who have been trained by it.&quot; I praise You for using this crisis in my life to
         bring me clarity on a needed action. Please grant me the needed courage to follow through on this clarity today. In advanced and by faith, I praise You
         for what You are doing in my life. In Jesus great name, amen.
+      </span>
+    ),
+  })
+  .set('21', {
+    book: 'Clarity in Crisis',
+    identifier: 'clarity-in-crisis',
+    element: (
+      <>
+        <div>
+          <Question question="What examples from your life illustrate the point that what's right can be done in ways that are wrong?" />
+          <Question question="Which of Saul's four tactics of excuse create the biggest problem for you? What are you going to do about it?" />
+          <Question question="As a result of mistakes, what have you learned about the difference between gut reactions and wise responses?" />
+        </div>
+        <div>
+          <Question
+            question="How do you practice repentance (see 1 John 1:9)?"
+            renderReference={() => <VerseTooltip verse="1 John 1:9" identifier="1jn.1.9" />}
+          />
+          <Question question="How do you keep God's forgiveness separate from consequences?" />
+        </div>
+      </>
+    ),
+    conclusion: (
+      <span className="italic">
+        Father God, Forgive me for thinking I can avoid the truth about myself with excuses. Teach me to be ruthless in rejecting self-righteousness and
+        self-justifications. Increase my sensitivity about excusing instead of confessing and repenting. Keep me from trying to substitute cheap sacrifice for
+        costly obedience. I realize that complete obedience is not in me, but that You are wiling to increase my obedience to a far greater level than can ever
+        hope to on my own. Thank You for Your promise of participation, &quot;for it is God who works in you, both to will and to work for his good
+        pleasure.&quot; In Jesus&apos; name, amen.
       </span>
     ),
   });

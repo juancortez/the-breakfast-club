@@ -1,5 +1,5 @@
 import { Chapter } from '@/app/_components/Chapter/Chapter';
-import { ChapterTopic, getChapterDataByTopic, IChapterData, topicIdentifierToReadable } from '@/app/_components/Chapter/data';
+import { ChapterTopic, getChapterDataByTopic, IChapterData, topicIdentifierToReadable, TOPICS } from '@/app/_components/Chapter/data';
 import Head from 'next/head';
 import Link from 'next/link';
 
@@ -15,9 +15,8 @@ function findChapterByShortName(data: Map<string, IChapterData>, chapter: string
   return chapterData;
 }
 
-export const revalidate = 60;
-
-export const dynamicParams = true;
+// Set to false to only allow pre-generated paths
+export const dynamicParams = false;
 
 export const metadata = {
   title: 'The Breakfast Club',
@@ -42,6 +41,26 @@ const GRADIENT_ARRAY = [
   'bg-gradient-to-r from-fuchsia-500 to-cyan-500',
   'bg-gradient-to-r from-lime-400 to-lime-500',
 ];
+
+// Generate all static paths at build time
+export async function generateStaticParams() {
+  const paths: { topic: string; chapter: string }[] = [];
+
+  // Iterate through all topics
+  TOPICS.forEach((topic) => {
+    const chapterData = getChapterDataByTopic(topic);
+
+    // For each topic, get all chapters and use their identifier
+    chapterData.forEach((data) => {
+      paths.push({
+        topic: topic,
+        chapter: data.identifier, // Use identifier instead of the Map key
+      });
+    });
+  });
+
+  return paths;
+}
 
 export default function ChapterPage({ params: { topic, chapter } }: { params: { topic: ChapterTopic; chapter: string } }) {
   const chapterTopic = getChapterDataByTopic(topic);
