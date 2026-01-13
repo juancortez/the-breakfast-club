@@ -46,15 +46,13 @@ const GRADIENT_ARRAY = [
 export async function generateStaticParams() {
   const paths: { topic: string; chapter: string }[] = [];
 
-  // Iterate through all topics
   TOPICS.forEach((topic) => {
     const chapterData = getChapterDataByTopic(topic);
 
-    // For each topic, get all chapters and use their identifier
     chapterData.forEach((data) => {
       paths.push({
-        topic: topic,
-        chapter: data.identifier, // Use identifier instead of the Map key
+        topic,
+        chapter: data.identifier.split('#')[0], // 👈 strip fragment
       });
     });
   });
