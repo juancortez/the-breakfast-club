@@ -467,7 +467,8 @@ ActLikeMen.set('1', {
   })
   .set('19', {
     book: 'Clarity in Crisis',
-    identifier: 'clarity-in-crisis',
+    // TODO: fix this after 1/16
+    identifier: 'clarity-in-crisis-19',
     overview: (
       <div>
         <i>The end of the matter; all has been heard. Fear God and keep his commandments, for this is the whole duty of man.</i>
@@ -533,7 +534,8 @@ ActLikeMen.set('1', {
     ),
   })
   .set('21', {
-    book: 'Clarity in Crisis',
+    book: 'Clarity in Conflict',
+    // TODO: fix this after 1/16
     identifier: 'clarity-in-crisis',
     element: (
       <>
