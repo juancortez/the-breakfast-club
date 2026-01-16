@@ -467,8 +467,7 @@ ActLikeMen.set('1', {
   })
   .set('19', {
     book: 'Clarity in Crisis',
-    // TODO: fix this after 1/16
-    identifier: 'clarity-in-crisis-19',
+    identifier: 'clarity-in-crisis',
     overview: (
       <div>
         <i>The end of the matter; all has been heard. Fear God and keep his commandments, for this is the whole duty of man.</i>
@@ -535,8 +534,7 @@ ActLikeMen.set('1', {
   })
   .set('21', {
     book: 'Clarity in Conflict',
-    // TODO: fix this after 1/16
-    identifier: 'clarity-in-crisis',
+    identifier: 'clarity-in-conflict',
     element: (
       <>
         <div>
@@ -580,6 +578,34 @@ ActLikeMen.set('1', {
         costly obedience. I realize that complete obedience is not in me, but that You are wiling to increase my obedience to a far greater level than can ever
         hope to on my own. Thank You for Your promise of participation, &quot;for it is God who works in you, both to will and to work for his good
         pleasure.&quot; In Jesus&apos; name, amen.
+      </span>
+    ),
+  })
+  .set('22', {
+    book: 'Clarity - The Father Personifies It',
+    identifier: 'clarity-the-father-personifies-it',
+    element: (
+      <>
+        <div>
+          <Question question="In what area of your life today might you be going forward without the clarity you need to be sure of the desired outcome?" />
+          <Question question="What have been the consequences you have experienced for living with a foggy uncertainty?" />
+          <Question question="What makes it hardest for you to press for clarity where it is lacking?" />
+        </div>
+        <div>
+          <Question question="How can you 'stand firm in the faith' so that urgency does not rule over clarity?" />
+          <Question question="Is there someone at home, work, or church you need to call today to arrange a conversation to gain greater clarity?" />
+        </div>
+      </>
+    ),
+    conclusion: (
+      <span className="italic">
+        Dear Father in heaven,
+        <br />
+        You are holy, holy, holy. The earth is full of Your glorious presence and Your holiness is infinite. Thank You that clarity in thought and deed is
+        perfected in Your holy nature. My mind is blown as I contemplate Your call for me to holy clarity in all of my actions. I praise You for placing this
+        restriction on my passion as a man. From the depth of my heart, I ask that my urgent watching would be perfected by Your holy clarity so that I will not
+        simply act as You call men to act, but will do it in a way that causes benefit and not harm. I pray for the courage to act today on behalf of those who
+        trust me in every sphere of my life. Let my passion be protected with a holy clarity that reflects Your perfect nature. In Jesus&apos; name, amen.
       </span>
     ),
   });
