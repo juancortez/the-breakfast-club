@@ -541,7 +541,27 @@ ActLikeMen.set('1', {
       <>
         <div>
           <Question question="What examples from your life illustrate the point that what's right can be done in ways that are wrong?" />
-          <Question question="Which of Saul's four tactics of excuse create the biggest problem for you? What are you going to do about it?" />
+          <Question
+            question="Which of Saul's four tactics of excuse create the biggest problem for you? What are you going to do about it?"
+            FollowUp={
+              <div>
+                <ul className="list-none">
+                  <li>
+                    <strong>Justified disobedience</strong> - &quot;I disobeyed but had a good reason&quot;
+                  </li>
+                  <li>
+                    <strong>Partial obedience</strong> - &quot;I disobeyed partially&quot;
+                  </li>
+                  <li>
+                    <strong>Blamed others</strong> - &quot;My fear of others made me disobey&quot;
+                  </li>
+                  <li>
+                    <strong>Blamed others for causing him to disobey</strong> - &quot;They made me do it&quot;
+                  </li>
+                </ul>
+              </div>
+            }
+          />
           <Question question="As a result of mistakes, what have you learned about the difference between gut reactions and wise responses?" />
         </div>
         <div>
