@@ -608,4 +608,35 @@ ActLikeMen.set('1', {
         trust me in every sphere of my life. Let my passion be protected with a holy clarity that reflects Your perfect nature. In Jesus&apos; name, amen.
       </span>
     ),
+  })
+  .set('23', {
+    book: 'This is Not a Test',
+    identifier: 'this-is-not-a-test',
+    element: (
+      <>
+        <div>
+          <Question question="How would you describe the current role of the Holy Spirit in your life?" />
+          <Question question="When was the last time you sensed God's Spirit issuing a warning to you about a decision or action you were considering? What did you do?" />
+          <Question question="What is holding you back from more consistent yielding to the Holy Spirit in daily living?" />
+        </div>
+        <div>
+          <Question question="Is there, in you, a strong and growing dissatisfaction with the level of your own relationship with God? If so, use the following prayer to create a plan for the next week." />
+        </div>
+      </>
+    ),
+    conclusion: (
+      <span className="italic">
+        Heavenly Father,
+        <br />
+        <br />I recognize I need to be filled by Your Spirit. I&apos;ve trusted Christ for my salvation, so l know I have Your Spirit indwelling - but I want
+        His filling.
+        <br />
+        <br />I also realize that holding and guarding sin prevents filling. So I&apos;m confessing all known sin and asking You to reveal any iniquity I&apos;m
+        overlooking. I will meet with some Christian friends and ask them to help me see myself better. Whatever it takes, I want to remove the hindrances that
+        would grieve or quench Your Spirit. Lord, I want to yield myself completely to Your purposes. Help me eliminate all secondary goals. I want to desire
+        only what You desire for my life. Please alert me by Your Spirit every morning to ask You to fill me. I&apos;m counting on Your Son&apos;s promise,
+        &quot;If you then, who are evil, know how to give good gifts to your children, how much more will the heavenly Father give the Holy Spirit to those who
+        ask him!&quot; Fill me now, Lord. I confess and ask You for these things in Jesus&apos; name, amen.
+      </span>
+    ),
   });

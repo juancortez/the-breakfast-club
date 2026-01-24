@@ -15,6 +15,7 @@ function findChapterByShortName(data: Map<string, IChapterData>, chapter: string
   return chapterData;
 }
 
+export const dynamic = 'force-static';
 // Set to false to only allow pre-generated paths
 export const dynamicParams = false;
 
