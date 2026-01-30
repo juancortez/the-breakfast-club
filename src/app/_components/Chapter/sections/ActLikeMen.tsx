@@ -610,6 +610,23 @@ ActLikeMen.set('1', {
     ),
   })
   .set('23', {
+    book: 'Clarity - The Clarity of Christ',
+    identifier: 'clarity-the-clarity-of-christ',
+    element: (
+      <>
+        <div>
+          <Question question="What story from the life of Christ do you most admire for his demonstrated clarity in the midst of confusion?" />
+          <Question question="Why is it essential that we achieve the clarity of acting for the sake of others and not ourselves?" />
+          <Question question="In what situation have you acted courageously to advance God's purposes, and what was the outcome?" />
+        </div>
+        <div>
+          <Question question="In what situation have you lacked the needed clarity and applied urgency in a way that made things worse?" />
+          <Question question="Who in your life is most in need of your courage as a man, and would you be willing to talk to him today and offer yourself to help in any way that is needed?" />
+        </div>
+      </>
+    ),
+  })
+  .set('24', {
     book: 'This is Not a Test',
     identifier: 'this-is-not-a-test',
     element: (
