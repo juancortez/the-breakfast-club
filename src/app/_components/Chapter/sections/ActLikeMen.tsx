@@ -656,4 +656,31 @@ ActLikeMen.set('1', {
         ask him!&quot; Fill me now, Lord. I confess and ask You for these things in Jesus&apos; name, amen.
       </span>
     ),
+  })
+  .set('25', {
+    book: 'The Battle to be Strong',
+    identifier: 'the-battle-to-be-strong',
+    element: (
+      <>
+        <div>
+          <Question question="Do you agree that as men, we admire great strength in others and aspire to it ourselves? In what ways?" />
+          <Question question="When have you most needed strength and felt most humbled by where you lacked it?" />
+        </div>
+        <div>
+          <Question question="How do you respond to the knowledge that unbroken patterns of sin in all areas including sexuality are indicative of a man who is not truly following Christ?" />
+          <Question question="What are your earliest memories of sexual temptation, and how did you handle them?" />
+        </div>
+      </>
+    ),
+    conclusion: (
+      <span className="italic">
+        Father God,
+        <br />
+        <br />I come to You today as Your man, bought and paid for by the sacrifice of Your Son. In my heart I deeply desire to be a slave to righteousness and
+        not a slave to sin. I pray for greater levels of victory over the power of lust and longer seasons of joyful obedience to Your Word. Forgive me for the
+        times I have allowed my desires to dehumanize and objectify people for selfish sinful purposes. Cleanse my heart and mind from images and memories that
+        hinder my desire to obey Your command to &quot;be strong.&quot; I welcome Your strength today to conquer any lust lingering in my heart and ask that I
+        could walk today in genuine victory and flee any temptation I encounter for Your glory. In Jesus&apos; name, amen.
+      </span>
+    ),
   });
