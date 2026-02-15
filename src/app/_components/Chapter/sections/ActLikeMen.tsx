@@ -683,4 +683,32 @@ ActLikeMen.set('1', {
         could walk today in genuine victory and flee any temptation I encounter for Your glory. In Jesus&apos; name, amen.
       </span>
     ),
+  })
+  .set('26', {
+    book: 'The Strength of Authenticity',
+    identifier: 'the-strength-of-authenticity',
+    element: (
+      <>
+        <div>
+          <Question question="In what area in your life would you be most embarrassed for your friends and family to have full knowledge of your thoughts and actions?" />
+          <Question question="In what part of your life are you most like Christ and why do you believe you have victory there versus other areas?" />
+          <Question question="Is there anyone you can be completely candid with—who knows the deepest you with all your struggles—without judgment or condemnation?" />
+        </div>
+        <div>
+          <Question question="Describe a time when you have forfeited God's strength through divided priorities and compromise of what really matters most to you. What did you do to resolve this and did it happen again?" />
+          <Question question="Have you been able to be completely candid in answering these questions? Do you fear someone finding what you might write and have held back for that reason?" />
+        </div>
+      </>
+    ),
+    conclusion: (
+      <span className="italic">
+        Dear Father in heaven,
+        <br />
+        <br />I know that You desire truth in my inmost being and I want to be the kind of quality man who gives You that level of authenticity. I am seeking
+        Your strength today to live in the victory of Christ&apos;s resurrection over all of my sins. Help me to stand against temptation in Your strength today
+        and take every sinful thought captive so that my mind remains focused on exalting Christ today. Give me courage to abolish any wandering thoughts or
+        established patterns of sin that hinder Your strength from being my personal experience. I choose to walk in that strength today. In the strong name of
+        Jesus, amen.
+      </span>
+    ),
   });
