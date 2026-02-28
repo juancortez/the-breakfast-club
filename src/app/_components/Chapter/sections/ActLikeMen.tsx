@@ -711,4 +711,31 @@ ActLikeMen.set('1', {
         Jesus, amen.
       </span>
     ),
+  })
+  .set('27', {
+    book: 'The Samson Syndrome',
+    identifier: 'the-samson-syndrome',
+    element: (
+      <>
+        <div>
+          <Question question="Who have you trusted with the knowledge of your own early exposure to sensuality and ensuing struggles?" />
+          <Question question="Why do you think Satan goes to such lengths to scatter sensual crumbs in a young man's pathway that lead him in the wrong direction?" />
+        </div>
+        <div>
+          <Question question="How much of your personal sexual history has affected your relationship with God? How do you deal with the fact that God knows it all?" />
+        </div>
+      </>
+    ),
+    conclusion: (
+      <span className="italic">
+        Father,
+        <br />
+        <br />I know that sex is a wonderful gift from You that sin and Satan try desperately to corrupt. Thank You for marriage and the special protection for
+        healthy sexual expression that it provides. Thank You for the powerful effects of forgiveness that so often must address ways we have misused or abused
+        our sexuality. I pray for relationships with other men where I can disclose who I really am and experience the weight of their experiences as I pray for
+        them. Cure me from ever thinking, Father, that the way I treat my body doesn&apos;t somehow fit into Your plans for me. Teach me to value my sexuality
+        and every other good gift from Your hands as one of the means by which You want to bring glory to Yourself. I pray that will be true in my life, in
+        Jesus&apos; name, amen.
+      </span>
+    ),
   });
