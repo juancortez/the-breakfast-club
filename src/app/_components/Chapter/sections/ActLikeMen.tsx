@@ -738,4 +738,28 @@ ActLikeMen.set('1', {
         Jesus&apos; name, amen.
       </span>
     ),
+  })
+  .set('28', {
+    book: 'The Thorny Way',
+    identifier: 'the-thorny-way',
+    element: (
+      <>
+        <div>
+          <Question question="What is the area of greatest weakness in your life?" />
+          <Question question="When did you last confess this weakness to the Lord, seeking His strength?" />
+        </div>
+        <div>
+          <Question question="Is it difficult for you to admit your struggles to yourself and others? Why?" />
+        </div>
+      </>
+    ),
+    conclusion: (
+      <span className="italic">
+        I come before You in the name of Your strong son, Jesus Christ. I am kneeling here because I want the posture of my body to reflect the humility in my
+        heart. I confess to You that I am a weak man. My intentions are not stronger than my lust; my will to do right is often not stronger than the temptation
+        around me. I confess my weakness and ask forgiveness for the times my body has not been used as an instrument of righteousness for Your glory. I desire
+        truth in my innermost being and ask that Your grace cleanse my heart and Your strength give me victory, for apart from You I can do nothing. In
+        Jesus&apos; name, amen.
+      </span>
+    ),
   });
