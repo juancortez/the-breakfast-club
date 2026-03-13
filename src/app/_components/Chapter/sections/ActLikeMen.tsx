@@ -762,4 +762,29 @@ ActLikeMen.set('1', {
         Jesus&apos; name, amen.
       </span>
     ),
+  })
+  .set('29', {
+    book: 'Before the Fall',
+    identifier: 'before-the-fall',
+    element: (
+      <>
+        <div>
+          <Question question="How do you react to the awareness that Satan wants to devour you?" />
+          <Question question="Is sexual temptation your greatest exposure to failure or is it something else?" />
+          <Question question="What step in David's failure is the most needed warning for your life? Why?" />
+        </div>
+        <div>
+          <Question question="Do you have a healthy fear of moral failure? When does it become unhealthy?" />
+          <Question question='Where in your life is there "slippage" and what will you do to correct this?' />
+        </div>
+      </>
+    ),
+    conclusion: (
+      <span className="italic">
+        I praise You today that &quot;greater is He that is in me than he that is in the world.&quot; I come to You now, aware of the Enemy that desires to
+        devour, but I pray for the strength to be a man of authenticity for Your glory. Help me always to see what I give up when I allow secret sin to encroach
+        upon my relationship with You. Remind me how sin grieves Your Holy Spirit and forfeits the strength You want to express through my life. Help me to live
+        in that today. In Jesus&apos; strong name, amen.
+      </span>
+    ),
   });
