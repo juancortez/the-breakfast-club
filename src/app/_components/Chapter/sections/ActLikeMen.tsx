@@ -771,7 +771,37 @@ ActLikeMen.set('1', {
         <div>
           <Question question="How do you react to the awareness that Satan wants to devour you?" />
           <Question question="Is sexual temptation your greatest exposure to failure or is it something else?" />
-          <Question question="What step in David's failure is the most needed warning for your life? Why?" />
+          <Question
+            question="What step in David's failure is the most needed warning for your life? Why?"
+            FollowUp={
+              <div className="space-y-1">
+                <div className="ml-0">
+                  <strong>Prosperous times produce passive wills</strong>
+                  <div className="text-sm italic text-gray-500 dark:text-gray-400">David stayed home while his army went to war</div>
+                </div>
+                <div className="ml-0 text-gray-400">&#8595;</div>
+                <div className="ml-4">
+                  <strong>Passive wills produce overpowering emotions</strong>
+                  <div className="text-sm italic text-gray-500 dark:text-gray-400">David wandered to the rooftop and saw Bathsheba bathing</div>
+                </div>
+                <div className="ml-4 text-gray-400">&#8595;</div>
+                <div className="ml-8">
+                  <strong>Overpowering emotions produce perverse thoughts</strong>
+                  <div className="text-sm italic text-gray-500 dark:text-gray-400">David sent someone to find out who she was</div>
+                </div>
+                <div className="ml-8 text-gray-400">&#8595;</div>
+                <div className="ml-12">
+                  <strong>Perverse thoughts produce private sin</strong>
+                  <div className="text-sm italic text-gray-500 dark:text-gray-400">David sent for her and slept with her</div>
+                </div>
+                <div className="ml-12 text-gray-400">&#8595;</div>
+                <div className="ml-16">
+                  <strong>Private sin produces public consequences</strong>
+                  <div className="text-sm italic text-gray-500 dark:text-gray-400">Bathsheba became pregnant, exposing hidden sin</div>
+                </div>
+              </div>
+            }
+          />
         </div>
         <div>
           <Question question="Do you have a healthy fear of moral failure? When does it become unhealthy?" />
