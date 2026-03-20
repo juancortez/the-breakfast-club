@@ -817,4 +817,31 @@ ActLikeMen.set('1', {
         in that today. In Jesus&apos; strong name, amen.
       </span>
     ),
+  })
+  .set('30', {
+    book: 'Our Strong God',
+    identifier: 'our-strong-god',
+    element: (
+      <>
+        <div>
+          <Question question="Do you agree that unconfessed sin forfeits God's strength in our lives? Why or why not?" />
+          <Question question="What sin have you covered rather than confess? Confess it now." />
+        </div>
+        <div>
+          <Question question="What temptation threatens your authenticity that needs radical removal?" />
+        </div>
+      </>
+    ),
+    conclusion: (
+      <span className="italic">
+        Father,
+        <br />
+        <br />
+        Thank You for providing David both as a model and warning in Your Word. For all his great qualities, he was not immune from temptation and miserable
+        failure. Help me identify the moral fences I need to honor and lead me to others who can encourage me to keep them. I know the grass will immediately
+        look greener on the other side of any fence, but remind me that it covers the edge of a cliff I don&apos;t want to fall off. Thank You for the abundance
+        of encouragement You have provided and Your promise of being with me every moment. Keep me from ever ignoring Your Spirit&apos;s guidance away from sin.
+        In Jesus&apos; name I pray, amen.
+      </span>
+    ),
   });
