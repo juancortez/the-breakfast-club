@@ -844,4 +844,32 @@ ActLikeMen.set('1', {
         In Jesus&apos; name I pray, amen.
       </span>
     ),
+  })
+  .set('31', {
+    book: 'Back to Repentance',
+    identifier: 'back-to-repentance',
+    element: (
+      <>
+        <div>
+          <Question question="What is the connection between authenticity and strength? How did Samson lose it, and why didn't Jesus?" />
+          <Question question="Describe the time in your life you experienced personal repentance most deeply. What have been the long-term results?" />
+        </div>
+        <div>
+          <Question question="What prevents you from turning to God and asking Him to give you true repentance wherever it is needed right now?" />
+        </div>
+      </>
+    ),
+    conclusion: (
+      <span className="italic">
+        Lord,
+        <br />
+        <br />
+        Thank You for changing my heart. You have produced such a deep grief in me over what I&apos;ve done. I have excused the inexcusable and blamed others
+        for my wrongdoing. I see that as sin now and am turning around. As best as I know how, I&apos;m repenting of all the things that have kept me dry and
+        distant from You. It makes me sick just to think of how I&apos;ve allowed this to linger in my life. But by Your grace I am dealing with it now. Already
+        I sense that You are welling up in me the hope of restoration and the rightness of reconciliation to You. Don&apos;t stop, Lord! I am stepping out in
+        faith, performing deeds in keeping with repentance. Thank You for this renewed season of mercy to get this work done. I&apos;m getting on the right road
+        and not looking back. This I pray in Jesus&apos; name, amen.
+      </span>
+    ),
   });
