@@ -866,10 +866,37 @@ ActLikeMen.set('1', {
         <br />
         Thank You for changing my heart. You have produced such a deep grief in me over what I&apos;ve done. I have excused the inexcusable and blamed others
         for my wrongdoing. I see that as sin now and am turning around. As best as I know how, I&apos;m repenting of all the things that have kept me dry and
-        distant from You. It makes me sick just to think of how I&apos;ve allowed this to linger in my life. But by Your grace I am dealing with it now. Already
-        I sense that You are welling up in me the hope of restoration and the rightness of reconciliation to You. Don&apos;t stop, Lord! I am stepping out in
-        faith, performing deeds in keeping with repentance. Thank You for this renewed season of mercy to get this work done. I&apos;m getting on the right road
-        and not looking back. This I pray in Jesus&apos; name, amen.
+        distant from You. It makes me sick just to think of how I&apos;ve allowed this to linger in my life.
+        <br />
+        <br />
+        But by Your grace I am dealing with it now. Already I sense that You are welling up in me the hope of restoration and the rightness of reconciliation to
+        You. Don&apos;t stop, Lord! I am stepping out in faith, performing deeds in keeping with repentance. Thank You for this renewed season of mercy to get
+        this work done. I&apos;m getting on the right road and not looking back. This I pray in Jesus&apos; name, amen.
+      </span>
+    ),
+  })
+  .set('32', {
+    book: 'Letting Your Partner Lead',
+    identifier: 'letting-your-partner-lead',
+    element: (
+      <>
+        <div>
+          <Question question="How do you sense the ministry of the Holy Spirit in your life, convicting you of right and wrong and your accountability to God?" />
+          <Question question="What advantages do you see in the ministry of the Holy Spirit that would lead you to welcome and prayerfully invite a fuller experience of His work?" />
+        </div>
+        <div>
+          <Question question="What wrong in action or attitude may have grieved or even quenched the Holy Spirit that you could repent of?" />
+        </div>
+      </>
+    ),
+    conclusion: (
+      <span className="italic">
+        Dear Holy Spirit of God,
+        <br />
+        <br />
+        Please forgive my wayward heart that thinks about and chooses what I know must grieve You. Please forgive the times You have convicted me to show
+        humility and seek unity but I have stubbornly resisted and been prideful. I ask You now to take renewed leadership of my life and direct me according to
+        Your Word, even through this study, into a much deeper and more consistent expression of what You created man to be. For Jesus&apos; sake I pray, amen.
       </span>
     ),
   });
