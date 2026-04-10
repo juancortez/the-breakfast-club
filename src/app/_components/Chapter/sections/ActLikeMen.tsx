@@ -899,4 +899,31 @@ ActLikeMen.set('1', {
         Your Word, even through this study, into a much deeper and more consistent expression of what You created man to be. For Jesus&apos; sake I pray, amen.
       </span>
     ),
+  })
+  .set('33', {
+    book: 'Doing it All in Love',
+    identifier: 'doing-it-all-in-love',
+    element: (
+      <>
+        <div>
+          <Question question="What events in your past present a challenge of shame or regrets when you think about practicing love now?" />
+          <Question question="When you think about the ways a man can authentically love, what things come to mind?" />
+        </div>
+        <div>
+          <Question question="Who has been your best model for loving in a manly way? Why?" />
+        </div>
+      </>
+    ),
+    conclusion: (
+      <span className="italic">
+        Father,
+        <br />
+        <br />
+        When I read the accounts of Your Son&apos;s relationship with His disciples, I can&apos;t help but be drawn to the way He loved them. He was blunt,
+        honest, correcting, and sometimes angry but always loving. I want to be like that. I know He reflected in a human way the love that You have for me and
+        everyone I know. I know when You command me to love, You are not giving me permission to love in my limited capacity but to let You love through me. I
+        confess that most days I can hardly think about what that means, but with Your indwelling help I want to do better. Thank You for the hope I get from the
+        patience You give me. Teach me to love like Your Son. In His name I pray, amen.
+      </span>
+    ),
   });
