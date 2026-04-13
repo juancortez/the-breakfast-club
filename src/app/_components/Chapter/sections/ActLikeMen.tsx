@@ -922,8 +922,217 @@ ActLikeMen.set('1', {
         When I read the accounts of Your Son&apos;s relationship with His disciples, I can&apos;t help but be drawn to the way He loved them. He was blunt,
         honest, correcting, and sometimes angry but always loving. I want to be like that. I know He reflected in a human way the love that You have for me and
         everyone I know. I know when You command me to love, You are not giving me permission to love in my limited capacity but to let You love through me. I
-        confess that most days I can hardly think about what that means, but with Your indwelling help I want to do better. Thank You for the hope I get from the
-        patience You give me. Teach me to love like Your Son. In His name I pray, amen.
+        confess that most days I can hardly think about what that means, but with Your indwelling help I want to do better. Thank You for the hope I get from
+        the patience You give me. Teach me to love like Your Son. In His name I pray, amen.
+      </span>
+    ),
+  })
+  .set('34', {
+    book: 'Love has a lot to do with it',
+    identifier: 'love-has-a-lot-to-do-with-it',
+    element: (
+      <>
+        <div>
+          <Question question="Describe the best guy friendship you have ever had and what made it so." />
+          <Question question="When was the last time you had a heart-to-heart, mutually disclosing trusted conversation with a friend without fear of fallout or freak out?" />
+          <Question question="What makes it hardest for you to find and maintain life-giving friendships?" />
+        </div>
+        <div>
+          <Question question="How does Jesus' command to ‘love one another as I have loved you’ (John 13:34) change the way you view brotherhood?" />
+          <Question question="Who in your life most needs your love—not as a feeling, but as a disciplined, costly, faithful action—and how can you begin that today?" />
+        </div>
+      </>
+    ),
+    conclusion: (
+      <span className="italic">
+        Dear God,
+        <br />
+        <br />
+        Thank You for arresting my attention to the priority You place on love. Thank You for showing me that it is not an element or an add-on but the actual
+        purpose of my life and proof of my faith. Thank You for demonstrating Your love to me in Christ dying for my forgiveness while I was yet a sinner. I ask
+        for a deeper and more consistent demonstration of love through my life. Help me especially to love the people in my life most difficult to love and
+        direct my steps into supportive friendships that can work with me to these worthy ends for Your glory. In Jesus’ name, amen.
+      </span>
+    ),
+  })
+  .set('35', {
+    book: 'Two or more are more',
+    identifier: 'two-or-more-are-more',
+    element: (
+      <>
+        <div>
+          <Question question="Name your three closest friends—and a time each called you out and held you accountable." />
+          <Question question="When was a time you felt most alone, and how did that isolation negatively impact what you were facing?" />
+          <Question question="What man do you know personally who best exemplifies the importance of mutual community?" />
+        </div>
+        <div>
+          <Question question="In what ways have you confused connection with community—and isolation with self-sufficiency?" />
+          <Question question="What’s one practical step you can take this week to initiate deeper, risk-filled brotherhood?" />
+        </div>
+      </>
+    ),
+    conclusion: (
+      <span className="italic">
+        Dear God,
+        <br />
+        <br />I am convicted of the danger that comes with isolation. I am yielding to the truth that better, more consistent connection with other men will
+        help me make better choices and pursue better priorities. Thank You for the many biblical examples of men who thrived through relationship with
+        others—David and Jonathan, Jesus and the Twelve, Paul and Barnabas. Give me faith to believe that I have something to give other men as well as receive
+        from them. Please help me overcome my fear of being hurt or misunderstood. Please forgive the ease with which I keep doing my own thing and withhold
+        myself from others. Break my pride. Raise up my courage. Bring me into the safety of covenant. In Jesus’ name, amen.
+      </span>
+    ),
+  })
+  .set('36', {
+    book: 'The Man from Tarsus',
+    identifier: 'the-man-from-tarsus',
+    element: (
+      <>
+        <div>
+          <Question question="Describe your honest reaction to the challenge of greater self-disclosure in your friendships." />
+          <Question question="What do you see as the benefits of ‘getting real,’ and what are your fears in doing so?" />
+          <Question question="What has happened in your life to move you away from friendship as entertainment and toward friendship as meaningful community?" />
+        </div>
+        <div>
+          <Question
+            question="Paul’s story—his arrogance transformed into humble service—invites us to share our brokenness. Who in your life needs to hear *your* story of grace, not your performance?"
+            renderReference={() => <VerseTooltip verse="1 Timothy 1:15–16" identifier="1ti.1.15-16" />}
+          />
+          <Question question="How does the gospel liberate us from the need to appear spiritual—and instead empower us to *be* real?" />
+        </div>
+      </>
+    ),
+    conclusion: (
+      <span className="italic">
+        Dear God,
+        <br />
+        <br />I come before You, asking for wisdom in applying what I have just read to my life. Forgive me for wanting that kind of friendship but not always
+        doing what I can to get there. Give me eyes to see the potential strength and experience I could offer to the men around me—with a truer and more
+        genuine representation of myself. Deliver me from the fears and skepticisms I associate with men who open up. Grant that I will not have to suffer as
+        others have to get past my pride and sincerely make myself known. Do this for my good and Your glory. I pray in the name of Your Son, Jesus, amen.
+      </span>
+    ),
+  })
+  .set('37', {
+    book: 'Together',
+    identifier: 'together',
+    element: (
+      <>
+        <div>
+          <Question question="Describe the time in your life when loving community with other men peaked—and what made it thrive." />
+          <Question question="Which is a bigger issue for you: confidentiality or mutuality? Why?" />
+          <Question question="Are there disappointments or hurts that must be forgiven—for you to reengage in community?" />
+        </div>
+        <div>
+          <Question question="How does Jesus’ high-priestly prayer in John 17—‘that they may be one’—shape your longing for brotherhood?" />
+          <Question
+            question="What boundary have you built that keeps you safe—but also isolated? What would it cost you to lower it—even just a little?"
+            renderReference={() => <VerseTooltip verse="John 17:20–23" identifier="jn.17.20-23" />}
+          />
+        </div>
+      </>
+    ),
+    conclusion: (
+      <span className="italic">
+        Father in heaven,
+        <br />
+        <br />
+        Thank You for the grace of our Lord Jesus Christ that covers us and compels us to extend grace to our brothers. Forgive me for holding others to a
+        standard that I am not living up to—and remind me that the standard used on others will be used on me. I ask You to assault any spirit of independence
+        You see in my life and bring me afresh to full awareness of my need for others. Please keep me from seeing community through the lens of what I need and
+        give me renewed passion to love and serve others as an expression of gratitude for all You have done for me. In Jesus’ name, amen.
+      </span>
+    ),
+  })
+  .set('38', {
+    book: 'Trinity Expresses Community',
+    identifier: 'trinity-expresses-community',
+    element: (
+      <>
+        <div>
+          <Question question="Write out your thoughts about this teaching on community within the Godhead—how the Father, Son, and Spirit relate in perfect love, authority, and unity." />
+          <Question question="If heaven is the ultimate and eternal communion of the saints with each other and with God, how should that affect our view of community *today*?" />
+          <Question question="When was a time you felt most joy in knowing *and* being known by a friend?" />
+        </div>
+        <div>
+          <Question question="How does the Trinity model for us a love that honors difference *without* division—and authority *without* domination?" />
+          <Question question="What would your home, workplace, and church look like if men pursued this kind of Trinitarian community?" />
+        </div>
+      </>
+    ),
+    conclusion: (
+      <span className="italic">
+        Oh Triune God—Father, Son, and Holy Spirit—
+        <br />
+        <br />
+        My thoughts of You are such a trifle compared to Your infinite, eternal perfections. I worship You in spirit and truth. I bow before You in silence and
+        awe. How awesome is Your name! You have set Your glory above the heavens and ignited a passion in my heart to live for Your glory. Please penetrate my
+        heart with the reality of Your love, and help me to reflect it in how I love other men—not as competitors, but as co-heirs of grace. May my life bear
+        witness to the unity, love, and purpose that flows from Your very nature. In Jesus’ name, amen.
+      </span>
+    ),
+  })
+  .set('39', {
+    book: 'Under Orders to Love',
+    identifier: 'under-orders-to-love',
+    element: (
+      <>
+        <div>
+          <Question question="In what ways has your life shown the effects of love deficiency?" />
+          <Question question="Who is most in need of God’s love expressed through you today—and what specific, tangible act of love will you do for them?" />
+          <Question question="Will you take some extra time and journal something similar to what you have just read? Call it *My Journey toward Love*. Be as honest and open as you can—and choose a friend to share your story with." />
+        </div>
+        <div>
+          <Question
+            question="Jesus said, ‘By this all people will know that you are my disciples—if you have love for one another’ (John 13:35). Is that still true? Why or why not?"
+            renderReference={() => <VerseTooltip verse="John 13:34–35" identifier="jn.13.34-35" />}
+          />
+          <Question question="What do you need to forgive—or ask forgiveness for—so your love can flow freely?" />
+        </div>
+      </>
+    ),
+    conclusion: (
+      <span className="italic">
+        Dear Father God,
+        <br />
+        <br />
+        Perfect in love—so wonderfully expressed in Your Son, Jesus Christ—thank You for calling me to this highest expression of who You are. Thank You for
+        saving me to a future where we will know and love perfectly. I submit afresh to Your desire to grow me in love *now*. Give me fresh eyes to see the
+        people around me: those I need to forgive, those I need to forbear with, and those I need to leave in Your hands—and wait with open arms for the day of
+        reconciliation. Thank You for Your patience with my sinful selfishness that harms Your kingdom and wounds Your people. Grow me in the matchless love of
+        my Savior, Jesus Christ. In His name I pray, amen.
+      </span>
+    ),
+  })
+  .set('40', {
+    book: 'Strength to Love',
+    identifier: 'strength-to-love',
+    element: (
+      <>
+        <div>
+          <Question question="Describe your own experience with ‘juggling’—and what it’s like when things crash." />
+          <Question question="What word most fairly summarizes your Christian life: *exhausted*, *defeated*, or *empowered*? And why? Where have you known victory you would attribute to the Holy Spirit living the life of Christ *through* you?" />
+          <Question question="In what ways has this study most impacted your life—and what do you believe God is leading you to do in response?" />
+        </div>
+        <div>
+          <Question
+            question="Paul wrote, ‘I can do all things through Him who strengthens me’ (Phil. 4:13)—not to do *more*, but to *love more*. Where do you need this strength today?"
+            renderReference={() => <VerseTooltip verse="Philippians 4:13" identifier="php.4.13" />}
+          />
+          <Question question="What old strategy (self-reliance, distraction, performance) must you lay down so the Spirit can power your love?" />
+        </div>
+      </>
+    ),
+    conclusion: (
+      <span className="italic">
+        Heavenly Father,
+        <br />
+        <br />
+        Forgive me for resorting to my own strength, which is helpless—when You have offered me Your abundant, inexhaustible strength to face whatever You have
+        allowed into my life. I’ve delayed too long gaining and maintaining clarity on this point of empowering love. But today, I choose to stop striving and
+        start trusting. Fill me afresh with Your Spirit. Strengthen me inwardly through Your Word. Help me to love with a stamina only You can supply—especially
+        when it costs me. Make me a man whose love is not based on feeling, but on faithfulness to Christ. I pray in the strong name of Jesus—my Savior, my
+        Strength, and my Story. Amen.
       </span>
     ),
   });
