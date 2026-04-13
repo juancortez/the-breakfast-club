@@ -935,11 +935,9 @@ ActLikeMen.set('1', {
         <div>
           <Question question="Describe the best guy friendship you have ever had and what made it so." />
           <Question question="When was the last time you had a heart-to-heart, mutually disclosing trusted conversation with a friend without fear of fallout or freak out?" />
-          <Question question="What makes it hardest for you to find and maintain life-giving friendships?" />
         </div>
         <div>
-          <Question question="How does Jesus' command to ‘love one another as I have loved you’ (John 13:34) change the way you view brotherhood?" />
-          <Question question="Who in your life most needs your love—not as a feeling, but as a disciplined, costly, faithful action—and how can you begin that today?" />
+          <Question question="What makes it hardest for you to find and maintain life-giving friendships?" />
         </div>
       </>
     ),
@@ -963,11 +961,9 @@ ActLikeMen.set('1', {
         <div>
           <Question question="Name your three closest friends—and a time each called you out and held you accountable." />
           <Question question="When was a time you felt most alone, and how did that isolation negatively impact what you were facing?" />
-          <Question question="What man do you know personally who best exemplifies the importance of mutual community?" />
         </div>
         <div>
-          <Question question="In what ways have you confused connection with community—and isolation with self-sufficiency?" />
-          <Question question="What’s one practical step you can take this week to initiate deeper, risk-filled brotherhood?" />
+          <Question question="What man do you know personally who best exemplifies the importance of mutual community?" />
         </div>
       </>
     ),
@@ -991,14 +987,9 @@ ActLikeMen.set('1', {
         <div>
           <Question question="Describe your honest reaction to the challenge of greater self-disclosure in your friendships." />
           <Question question="What do you see as the benefits of ‘getting real,’ and what are your fears in doing so?" />
-          <Question question="What has happened in your life to move you away from friendship as entertainment and toward friendship as meaningful community?" />
         </div>
         <div>
-          <Question
-            question="Paul’s story—his arrogance transformed into humble service—invites us to share our brokenness. Who in your life needs to hear *your* story of grace, not your performance?"
-            renderReference={() => <VerseTooltip verse="1 Timothy 1:15–16" identifier="1ti.1.15-16" />}
-          />
-          <Question question="How does the gospel liberate us from the need to appear spiritual—and instead empower us to *be* real?" />
+          <Question question="What has happened in your life to move you away from friendship as entertainment and toward friendship as meaningful community?" />
         </div>
       </>
     ),
@@ -1019,16 +1010,11 @@ ActLikeMen.set('1', {
     element: (
       <>
         <div>
-          <Question question="Describe the time in your life when loving community with other men peaked—and what made it thrive." />
+          <Question question="Describe the time in your life when loving community with other men peaked." />
           <Question question="Which is a bigger issue for you: confidentiality or mutuality? Why?" />
-          <Question question="Are there disappointments or hurts that must be forgiven—for you to reengage in community?" />
         </div>
         <div>
-          <Question question="How does Jesus’ high-priestly prayer in John 17—‘that they may be one’—shape your longing for brotherhood?" />
-          <Question
-            question="What boundary have you built that keeps you safe—but also isolated? What would it cost you to lower it—even just a little?"
-            renderReference={() => <VerseTooltip verse="John 17:20–23" identifier="jn.17.20-23" />}
-          />
+          <Question question="Are there disappointments or hurts that must be forgiven—for you to reengage in community?" />
         </div>
       </>
     ),
@@ -1051,12 +1037,19 @@ ActLikeMen.set('1', {
       <>
         <div>
           <Question question="Write out your thoughts about this teaching on community within the Godhead—how the Father, Son, and Spirit relate in perfect love, authority, and unity." />
-          <Question question="If heaven is the ultimate and eternal communion of the saints with each other and with God, how should that affect our view of community *today*?" />
-          <Question question="When was a time you felt most joy in knowing *and* being known by a friend?" />
+          <Question
+            question={
+              <>
+                <span>
+                  If heaven is the ultimate and eternal communion of the saints with each other and with God, how should that affect our view of community{' '}
+                  <strong>today</strong>?
+                </span>
+              </>
+            }
+          />
         </div>
         <div>
-          <Question question="How does the Trinity model for us a love that honors difference *without* division—and authority *without* domination?" />
-          <Question question="What would your home, workplace, and church look like if men pursued this kind of Trinitarian community?" />
+          <Question question="When was a time you felt most joey in knowing and being known by a friend?" />
         </div>
       </>
     ),
@@ -1079,15 +1072,17 @@ ActLikeMen.set('1', {
       <>
         <div>
           <Question question="In what ways has your life shown the effects of love deficiency?" />
-          <Question question="Who is most in need of God’s love expressed through you today—and what specific, tangible act of love will you do for them?" />
-          <Question question="Will you take some extra time and journal something similar to what you have just read? Call it *My Journey toward Love*. Be as honest and open as you can—and choose a friend to share your story with." />
+          <Question question="Who is most in need of God’s love expressed through you today and what will you do about that?" />
         </div>
         <div>
           <Question
-            question="Jesus said, ‘By this all people will know that you are my disciples—if you have love for one another’ (John 13:35). Is that still true? Why or why not?"
-            renderReference={() => <VerseTooltip verse="John 13:34–35" identifier="jn.13.34-35" />}
+            question={
+              <span>
+                Will you take some extra time and journal something similar to what you have just read? Call it <strong>My Journey toward Love</strong>. Be as
+                honest and open as you can—and choose a friend to share your story with.
+              </span>
+            }
           />
-          <Question question="What do you need to forgive—or ask forgiveness for—so your love can flow freely?" />
         </div>
       </>
     ),
@@ -1111,15 +1106,17 @@ ActLikeMen.set('1', {
       <>
         <div>
           <Question question="Describe your own experience with ‘juggling’—and what it’s like when things crash." />
-          <Question question="What word most fairly summarizes your Christian life: *exhausted*, *defeated*, or *empowered*? And why? Where have you known victory you would attribute to the Holy Spirit living the life of Christ *through* you?" />
-          <Question question="In what ways has this study most impacted your life—and what do you believe God is leading you to do in response?" />
+          <Question
+            question={
+              <span>
+                What word most fairly summarizes your Christian life: <strong>exhausted</strong>, <strong>defeated</strong>, or <strong>empowered</strong>? And
+                why? Where have you known victory you would attribute to the Holy Spirit living the life of Christ <em>through</em> you?
+              </span>
+            }
+          />
         </div>
         <div>
-          <Question
-            question="Paul wrote, ‘I can do all things through Him who strengthens me’ (Phil. 4:13)—not to do *more*, but to *love more*. Where do you need this strength today?"
-            renderReference={() => <VerseTooltip verse="Philippians 4:13" identifier="php.4.13" />}
-          />
-          <Question question="What old strategy (self-reliance, distraction, performance) must you lay down so the Spirit can power your love?" />
+          <Question question="In what ways has this study most impacted your life—and what do you believe God is leading you to do in response?" />
         </div>
       </>
     ),
