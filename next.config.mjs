@@ -4,6 +4,15 @@ const nextConfig = {
   experimental: {
     instrumentationHook: true,
   },
+  async redirects() {
+    return [
+      {
+        source: '/topic/act-like-men',
+        destination: 'https://breakfast-club.redrocksacademy.com/curriculum/act-like-men',
+        permanent: false,
+      },
+    ];
+  },
 };
 
 export default withSentryConfig(nextConfig, {
