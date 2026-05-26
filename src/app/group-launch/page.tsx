@@ -25,7 +25,7 @@ export default function LandingPage() {
           This group exists to create a safe and encouraging space for men to encounter God through friendship, Scripture, and meaningful conversation.
         </p>
         <a
-          href={onContactUs('phone')}
+          href={onContactUs('link')}
           className="px-6 py-3 text-lg font-semibold rounded-2xl bg-gradient-to-r from-green-500 to-blue-500 text-white shadow-lg hover:opacity-90"
         >
           Get Involved
@@ -106,7 +106,7 @@ export default function LandingPage() {
           discover the strength of brotherhood.
         </p>
         <a
-          href={onContactUs('phone')}
+          href={onContactUs('link')}
           className="px-6 py-3 text-lg font-semibold rounded-2xl bg-gradient-to-r from-purple-600 to-indigo-600 text-white shadow-lg hover:opacity-90"
         >
           Join the Journey
